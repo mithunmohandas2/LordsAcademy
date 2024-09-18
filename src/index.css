@@ -30,4 +30,7 @@
     animation: marquee 30s linear infinite; /* Adjust the speed by increasing or decreasing the time */
   }
   
+  button {
+    cursor: pointer;
+  }
   

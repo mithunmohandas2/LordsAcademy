@@ -27,7 +27,7 @@ function Footer() {
                                     <img className='h-8 zoomEffect' src="/icons/facebook.png" alt="Facebook" />
                                 </a>
                                 <a href="https://www.linkedin.com/" target="_blank" className='p-1 md:p-0'>
-                                    <img className='h-8 zoomEffect' src="/icons/linkedIn.png" alt="LinkedIn" />
+                                    <img className='h-8 zoomEffect' src="/icons/linkedin.png" alt="LinkedIn" />
                                 </a>
                                 <a href="https://web.whatsapp.com" target="_blank" className='p-1 md:p-0'>
                                     <img className='h-8 zoomEffect' src="/icons/whatsapp.png" alt="Whatsapp" />

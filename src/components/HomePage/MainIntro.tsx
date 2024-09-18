@@ -7,13 +7,47 @@ function MainInro() {
     return (
         <>
             <section className="container-fluid relative -mt-28 -z-40">
-                <div className="absolute w-[100vw] bg-violetTxt/80 text-white py-0.5 font-semibold top-[20vh] md:top-[50vh] xl:top-[70vh] overflow-hidden z-40">
+                <div className="absolute w-[100vw] bg-violetTxt/80 text-white py-0.5 font-semibold top-[20vh] sm:top-[40vh] md:top-[65vh] xl:top-[70vh] overflow-hidden z-40">
                     <div className="animate-marquee whitespace-nowrap">
                         {news}
                     </div>
                 </div>
 
-                
+                <div className="absolute w-[180px] p-2 font-semibold top-[5vh] md:top-[8vh] xl:top-[10vh] lg:start-20 z-50">
+                    <div className="flex flex-col justify-center w-full items-center">
+                        <img className="w-12 lg:w-20" src="/images/logo.png" alt="Lords Av=cademy Logo" />
+                        <h2>LORDS ACADEMY</h2>
+
+                        <div className="hidden flex-col items-center md:flex opacity-70">
+
+                            <button className="mt-14 w-[90px] text-sm border-b text-end border-black transform -rotate-90 mb-12">Follow us</button>
+
+                            <a href="https://www.facebook.com" target="_blank" className='p-1 md:p-0 mb-1'>
+                                <img className='h-8 zoomEffect' src="/icons/facebook_outline.png" alt="Facebook" />
+                            </a>
+                            <a href="https://www.youtube.com/" target="_blank" className='p-1 md:p-0 mb-1'>
+                                <img className='h-8 zoomEffect' src="/icons/youtube_outline.png" alt="youtube" />
+                            </a>
+                            <a href="https://www.instagram.com" target="_blank" className='p-1 md:p-0 mb-1'>
+                                <img className='h-8 zoomEffect' src="/icons/instagram_outline.png" alt="Instagram" />
+                            </a>
+                            <a href="https://twitter.com" target="_blank" className='p-1 md:p-0 mb-1'>
+                                <img className='h-8 zoomEffect' src="/icons/twitter_outline.png" alt="Twitter" />
+                            </a>
+
+                            <div className="flex mt-2">
+                                <button className="mx-1 px-0.5 h-10 mb-2"><span className="material-symbols-outlined"> call </span></button>
+                                <button className="mx-1 px-0.5 h-10 mb-2"><span className="material-symbols-outlined"> location_on </span></button>
+                                <button className="mx-1 px-0.5 h-10 mb-2"><span className="material-symbols-outlined"> search </span></button>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
 
                 {/* Banner image */}
                 <img className="w-full" src={banner} alt="LORDS ACADEMY Banner" />
