@@ -40,7 +40,7 @@ function Footer() {
 
                     </div>
 
-                    <div className="w-full grid grid-cols-4">
+                    <div className="w-full grid grid-cols-2 md:grid-cols-4">
 
                         <div className='px-3 sm:px-6'>
                             <h3 className="text-lg sm:text-xl font-semibold  mt-4 mb-2">Useful Links</h3>

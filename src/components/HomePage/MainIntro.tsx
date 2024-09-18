@@ -1,13 +1,32 @@
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function MainInro() {
     const banner = "https://img.freepik.com/premium-photo/education-school-concept-little-student-girl-studying-school_380164-38668.jpg";
     const banner2 = "https://png.pngtree.com/thumb_back/fh260/background/20190221/ourmid/pngtree-school-season-back-to-school-season-blue-cartoon-image_11842.jpg";
     const news = "Your News Here  Your News Here  Your News Here  Your News Here  Your News Here  Your News Here";
+    const sliderImages = [
+        "https://assets-homepages-learning.3plearning.net/wp-content/uploads/2020/06/blog-20-student-engagement-strategies-captivating-classroom.png",
+        "https://media.licdn.com/dms/image/D5612AQHMy2a77BYhng/article-cover_image-shrink_600_2000/0/1688493825862?e=2147483647&v=beta&t=3G8a1rukKM80hGN13ANRZrINbpnGBwwqAciz8I0KWUI",
+        "https://news.mit.edu/sites/default/files/styles/news_article__image_gallery/public/images/202403/MIT-SchoolQuality-01_0.jpg?itok=eIDmx516",
+        "https://www.oakridge.in/wp-content/uploads/2024/06/First-Day-School-e1718272560628.jpg"
+    ];
+
+    const sliderSettings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+    };
 
     return (
         <>
             <section className="container-fluid relative -mt-28 -z-40">
-                <div className="absolute w-[100vw] bg-violetTxt/80 text-white py-0.5 font-semibold top-[20vh] sm:top-[40vh] md:top-[65vh] xl:top-[70vh] overflow-hidden z-40">
+                <div className="absolute w-[100vw] bg-violetTxt/80 text-white py-0.5 font-semibold top-[35vh] sm:top-[50vh] md:top-[75vh] xl:top-[70vh] 2xl:top-[80vh] overflow-hidden z-40">
                     <div className="animate-marquee whitespace-nowrap">
                         {news}
                     </div>
@@ -67,7 +86,7 @@ function MainInro() {
 
 
 
-            <section id="banner" className="flex flex-col justify-center sm:flex-row items-center gap-8">
+            <section id="banner" className="sm:flex justify-center sm:flex-row items-center gap-8">
                 <div className="sm:w-1/2 flex">
                     <div className="mx-auto px-2">
                         <div className="flex items-center mt-10">
@@ -86,8 +105,15 @@ function MainInro() {
 
                 </div>
 
-                <div className="sm:w-1/2 container-fluid">
-                    <img className="object-contain h-full" src={banner} alt="banner" />
+                {/* Carousel Section */}
+                <div className="sm:w-1/2">
+                    <Slider {...sliderSettings}>
+                        {sliderImages.map((image, index) => (
+                            <div className="w-full h-[200px] sm:h-[450px]" key={index}>
+                                <img className="object-cover w-full h-full" src={image} alt={`Image ${index + 1}`} />
+                            </div>
+                        ))}
+                    </Slider>
                 </div>
             </section>
 

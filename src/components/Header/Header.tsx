@@ -78,7 +78,7 @@ const Header = ({ location }: { location: string }) => {
 
 
                     {/* Large display Header */}
-                    <div className="items-center hidden md:flex md:gap-5 mt-2">
+                    <div className="items-center hidden md:flex md:gap-5 mt-2 text-xs lg:text-sm xl:text-lg">
                         <div className="font-semibold cursor-pointer hover:opacity-70 zoomEffect" >
                             ADMISSION
                         </div>
