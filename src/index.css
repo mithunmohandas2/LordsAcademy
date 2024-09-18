@@ -13,3 +13,21 @@
   .zoomEffect:hover{
     transform:scale(1.07);
   }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .animate-marquee {
+    display: inline-block;
+    white-space: nowrap;
+    padding-left: 2%; /* Increase this value if you want more space between repetitions */
+    animation: marquee 30s linear infinite; /* Adjust the speed by increasing or decreasing the time */
+  }
+  
+  
