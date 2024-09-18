@@ -45,39 +45,39 @@ function Footer() {
                         <div className='px-3 sm:px-6'>
                             <h3 className="text-lg sm:text-xl font-semibold  mt-4 mb-2">Useful Links</h3>
                             <ul className='text-sm sm:text-lg font-thin'>
-                                <li className='cursor-pointer'>About Us</li>
-                                <li className='cursor-pointer'>Staff Directory</li>
-                                <li className='cursor-pointer'>Parents</li>
-                                <li className='cursor-pointer font-semibold'>School Facilities</li>
-                                <li className='cursor-pointer'>FAQs</li>
+                                <li className='cursor-pointer hover:text-blue-700'>About Us</li>
+                                <li className='cursor-pointer hover:text-blue-700'>Staff Directory</li>
+                                <li className='cursor-pointer hover:text-blue-700'>Parents</li>
+                                <li className='cursor-pointer hover:text-blue-700 font-semibold'>School Facilities</li>
+                                <li className='cursor-pointer hover:text-blue-700'>FAQs</li>
                             </ul>
                         </div>
                         <div className='px-3 sm:px-6'>
 
                             <h3 className="text-lg sm:text-xl font-semibold mt-4 mb-2 opacity-0">Links</h3>
                             <ul className='text-sm sm:text-lg font-thin'>
-                                <li>Application</li>
-                                <li>Academics</li>
-                                <li>News</li>
-                                <li>Blog</li>
-                                <li>Careers</li>
+                                <li className='cursor-pointer hover:text-blue-700'>Application</li>
+                                <li className='cursor-pointer hover:text-blue-700'>Academics</li>
+                                <li className='cursor-pointer hover:text-blue-700'>News</li>
+                                <li className='cursor-pointer hover:text-blue-700'>Blog</li>
+                                <li className='cursor-pointer hover:text-blue-700'>Careers</li>
                             </ul>
                         </div>
                         <div className='px-3 sm:px-6'>
 
                             <h3 className="text-lg sm:text-xl font-semibold mt-4 mb-2">Contact</h3>
                             <ul className='text-sm sm:text-lg font-thin'>
-                                <li className='cursor-pointer'>Capital Square Two, 21 Church Street, #01-01, SIngapore 049480</li>
-                                <li className='cursor-pointer'>+65 6466 4475</li>
-                                <li className='cursor-pointer'>admissions@ils.edu.sg</li>
+                                <li>Capital Square Two, 21 Church Street, #01-01, Singapore 049480</li>
+                                <li>+65 6466 4475</li>
+                                <li>admissions@ils.edu.sg</li>
                             </ul>
                         </div>
                         <div className='px-3 sm:px-6'>
 
                             <h3 className="text-lg sm:text-xl font-semibold mt-4 mb-2">Disclaimer</h3>
                             <ul className='text-sm sm:text-lg font-thin'>
-                                <li className='cursor-pointer'>Disclosure</li>
-                                <li className='cursor-pointer'>Dispute Resolution & Withdrawal Process</li>
+                                <li className='cursor-pointer hover:text-blue-700'>Disclosure</li>
+                                <li className='cursor-pointer hover:text-blue-700'>Dispute Resolution & Withdrawal Process</li>
                             </ul>
                         </div>
 

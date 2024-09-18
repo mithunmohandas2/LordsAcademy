@@ -33,7 +33,7 @@ const Header = ({ location }: { location: string }) => {
                 <div className="flex justify-between items-center">
 
                     <div className={`flex items-center text-2xl font-semibold gap-3 ${location === 'home' && 'opacity-0'}`}>
-                        <img onClick={() => Navigate("/")} className="w-20" src="/images/logo.png" alt="Lords Av=cademy Logo" />
+                        <img onClick={() => Navigate("/")} className="w-20 cursor-pointer zoomEffect" src="/images/logo.png" alt="Lords Av=cademy Logo" />
                         <h1>LORDS <span className="text-specialCyan">ACADEMY</span></h1>
                     </div>
 
@@ -79,19 +79,19 @@ const Header = ({ location }: { location: string }) => {
 
                     {/* Large display Header */}
                     <div className="items-center hidden md:flex md:gap-5 mt-2 text-xs lg:text-sm xl:text-lg">
-                        <div className="font-semibold cursor-pointer hover:opacity-70 zoomEffect" >
+                        <div className="font-semibold cursor-pointer hover:text-blue-700 zoomEffect" >
                             ADMISSION
                         </div>
 
-                        <div className="font-semibold cursor-pointer hover:opacity-70 zoomEffect" >
+                        <div className="font-semibold cursor-pointer hover:text-blue-700 zoomEffect" >
                             FEE
                         </div>
 
-                        <div className="font-semibold cursor-pointer hover:opacity-70 zoomEffect" >
+                        <div className="font-semibold cursor-pointer hover:text-blue-700 zoomEffect" >
                             STUDENT LOGIN
                         </div>
 
-                        <div className="font-semibold cursor-pointer hover:opacity-70 zoomEffect" >
+                        <div className="font-semibold cursor-pointer hover:text-blue-700 zoomEffect" >
                             CONTACT
                         </div>
 
