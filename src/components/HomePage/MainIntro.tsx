@@ -26,7 +26,7 @@ function MainInro() {
     return (
         <>
             <section className="container-fluid relative -mt-28 -z-40">
-                <div className="absolute w-[100vw] bg-violetTxt/80 text-white py-0.5 font-semibold top-[35vh] sm:top-[50vh] md:top-[75vh] xl:top-[70vh] 2xl:top-[80vh] overflow-hidden z-40">
+                <div className="absolute w-full bg-violetTxt/80 text-white py-0.5 font-semibold top-[35vh] sm:top-[50vh] md:top-[75vh] xl:top-[70vh] 2xl:top-[80vh] overflow-hidden z-40">
                     <div className="animate-marquee whitespace-nowrap">
                         {news}
                     </div>
