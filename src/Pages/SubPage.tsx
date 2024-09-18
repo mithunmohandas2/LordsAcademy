@@ -6,7 +6,7 @@ function SubPage({ location }: { location: string }) {
     return (
         <div className="flex">
 
-            <div className="w-[100px] min-h-screen bg-menubarBg">
+            <div className="w-[60px] bg-menubarBg">
                 <div className="mt-3 text-center text-white cursor-pointer hover:opacity-70 items-center" >
                     <p className="text-4xl">  &#9776;</p>
                     <p className="text-xs">MENU</p>

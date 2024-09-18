@@ -7,7 +7,7 @@ function Footer() {
 
                 <div className="m-5 xl:mx-20 pb-5 border-b lg:flex">
 
-                    <div className="md:min-w-[400px] 2xl:min-w-[700px]">
+                    <div className="md:min-w-[400px] 2xl:min-w-[600px]">
 
                         <div className={`flex justify-center lg:justify-start items-center text-2xl font-semibold gap-3`}>
                             <img className="w-20" src={logo} alt="Lords Av=cademy Logo" />
