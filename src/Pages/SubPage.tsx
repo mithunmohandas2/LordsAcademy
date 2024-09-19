@@ -18,8 +18,8 @@ function SubPage({ location }: { location: string }) {
                 <Header location={location} />
                 <div className="my-10">
 
-                    {/* SubPage Contents */}
-                    {location === "EggsLife" && <EggsLife />}
+                    {/* SubPage Contents : Assign a new component for each subpage and add them as below */}
+                    {location === "EGGS Life" && <EggsLife />}
 
                 </div>
 
