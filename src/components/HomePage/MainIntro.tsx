@@ -4,7 +4,8 @@ import "slick-carousel/slick/slick-theme.css";
 
 function MainInro() {
     const banner = "https://img.freepik.com/premium-photo/education-school-concept-little-student-girl-studying-school_380164-38668.jpg";
-    const banner2 = "https://png.pngtree.com/thumb_back/fh260/background/20190221/ourmid/pngtree-school-season-back-to-school-season-blue-cartoon-image_11842.jpg";
+    // const banner2 = "https://png.pngtree.com/thumb_back/fh260/background/20190221/ourmid/pngtree-school-season-back-to-school-season-blue-cartoon-image_11842.jpg";
+    const principal = "https://www.lordsacademy.com/wp-content/uploads/2021/02/principal.jpg";
     const news = "Your News Here  Your News Here  Your News Here  Your News Here  Your News Here  Your News Here";
     const sliderImages = [
         "https://assets-homepages-learning.3plearning.net/wp-content/uploads/2020/06/blog-20-student-engagement-strategies-captivating-classroom.png",
@@ -39,7 +40,7 @@ function MainInro() {
 
                         <div className="hidden flex-col items-center md:flex opacity-70">
 
-                            <button className="mt-14 w-[90px] text-sm border-b text-end border-black transform -rotate-90 mb-12">Follow us</button>
+                            <button className="mt-20 me-4 w-[90px] text-sm border-b text-end border-black transform -rotate-90 mb-12">Follow us</button>
 
                             <a href="https://www.facebook.com" target="_blank" className='p-1 md:p-0 mb-1'>
                                 <img className='h-8 zoomEffect' src="/icons/facebook_outline.png" alt="Facebook" />
@@ -110,15 +111,42 @@ function MainInro() {
                     <Slider {...sliderSettings}>
                         {sliderImages.map((image, index) => (
                             <div className="w-full h-[200px] sm:h-[450px]" key={index}>
-                                <img className="object-cover w-full h-full" src={image} alt={`Image ${index + 1}`} />
+                                <img className="object-cover w-full h-full lg:w-[90%]" src={image} alt={`Image ${index + 1}`} />
                             </div>
                         ))}
                     </Slider>
                 </div>
             </section>
 
-            <section className="container-fluid">
-                <img className="object-contain w-full" src={banner2} alt="banner" />
+            <section className="container-fluid bg-violetTxt p-5 md:p-10">
+                <br />
+                <div className="bg-white rounded-lg p-5 md:p-10">
+                    <h1 className="text-[2.2rem] text-center text-violetTxt font-semibold">Our Principal</h1>
+                    <hr className="m-5" />
+
+                    <div className="sm:flex justify-center sm:flex-row items-center gap-8">
+
+                        <div className="sm:w-2/3 flex flex-col">
+                            <img className="object-contain w-full mb-8 sm:mb-0 rounded-lg shadow-md" src={principal} alt="principal" />
+                            <p className="text-center">Fr.JOSE KIDANGAN</p>
+
+                        </div>
+                        <div className="sm:w-full flex">
+                            <div className="relative w-full overflow-hidden" style={{ paddingTop: '56.25%' }}>
+                                <iframe
+                                    className="absolute top-0 left-0 w-full h-full"
+                                    src="https://www.youtube.com/embed/fIaxgppSi2c?autoplay=1&mute=1&loop=1&playlist=fIaxgppSi2c&controls=0&showinfo=0&modestbranding=1"
+                                    title="YouTube video"
+                                    frameBorder="0"
+                                    allow="autoplay; encrypted-media"
+                                    allowFullScreen
+                                />
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
             </section>
 
         </>

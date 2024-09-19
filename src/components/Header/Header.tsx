@@ -94,7 +94,7 @@ const Header = ({ location }: { location: string }) => {
                     )}
 
                     {/* Large display Header */}
-                    <div className="items-center hidden md:flex md:gap-5 mt-2 text-xs lg:text-sm xl:text-lg">
+                    <div className="items-center hidden md:flex md:gap-5 mt-2 text-xs lg:text-sm xl:text-md 2xl:text-lg">
                         <div className="font-semibold cursor-pointer hover:text-blue-700 zoomEffect"> ADMISSION </div>
                         <div className="font-semibold cursor-pointer hover:text-blue-700 zoomEffect"> FEE </div>
                         <div className="font-semibold cursor-pointer hover:text-blue-700 zoomEffect"> STUDENT LOGIN </div>

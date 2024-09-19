@@ -7,7 +7,7 @@ function Footer() {
 
                 <div className="m-5 xl:mx-20 pb-5 border-b lg:flex">
 
-                    <div className="md:min-w-[400px] 2xl:min-w-[600px]">
+                    <div className="md:min-w-[400px] 2xl:min-w-[800px]">
 
                         <div className={`flex justify-center lg:justify-start items-center text-2xl font-semibold gap-3`}>
                             <img className="w-20" src={logo} alt="Lords Av=cademy Logo" />
@@ -40,46 +40,43 @@ function Footer() {
 
                     </div>
 
-                    <div className="w-full grid grid-cols-2 md:grid-cols-4">
+                    <div className="w-full grid grid-cols-2 md:grid-cols-3">
 
                         <div className='px-3 sm:px-6'>
                             <h3 className="text-lg sm:text-xl font-semibold  mt-4 mb-2">Useful Links</h3>
                             <ul className='text-sm sm:text-lg font-thin'>
                                 <li className='cursor-pointer hover:text-blue-700'>About Us</li>
-                                <li className='cursor-pointer hover:text-blue-700'>Staff Directory</li>
-                                <li className='cursor-pointer hover:text-blue-700'>Parents</li>
-                                <li className='cursor-pointer hover:text-blue-700 font-semibold'>School Facilities</li>
-                                <li className='cursor-pointer hover:text-blue-700'>FAQs</li>
+                                <li className='cursor-pointer hover:text-blue-700'>Faculty</li>
+                                <li className='cursor-pointer hover:text-blue-700'>Academics</li>
+                                <li className='cursor-pointer hover:text-blue-700'>Infrastructure</li>
                             </ul>
                         </div>
                         <div className='px-3 sm:px-6'>
 
                             <h3 className="text-lg sm:text-xl font-semibold mt-4 mb-2 opacity-0">Links</h3>
                             <ul className='text-sm sm:text-lg font-thin'>
-                                <li className='cursor-pointer hover:text-blue-700'>Application</li>
-                                <li className='cursor-pointer hover:text-blue-700'>Academics</li>
-                                <li className='cursor-pointer hover:text-blue-700'>News</li>
-                                <li className='cursor-pointer hover:text-blue-700'>Blog</li>
-                                <li className='cursor-pointer hover:text-blue-700'>Careers</li>
+                                <li className='cursor-pointer hover:text-blue-700'>Admission</li>
+                                <li className='cursor-pointer hover:text-blue-700'>Gallery</li>
+                                <li className='cursor-pointer hover:text-blue-700'>News & Events</li>
                             </ul>
                         </div>
-                        <div className='px-3 sm:px-6'>
+                        <div className='px-3 sm:px-6 col-span-2 md:col-span-1'>
 
                             <h3 className="text-lg sm:text-xl font-semibold mt-4 mb-2">Contact</h3>
                             <ul className='text-sm sm:text-lg font-thin'>
-                                <li>Capital Square Two, 21 Church Street, #01-01, Singapore 049480</li>
-                                <li>+65 6466 4475</li>
-                                <li>admissions@ils.edu.sg</li>
+                                <li>Lord’s Academy CMI ICSE School Varandarappilly Thrissur, Kerala - 680303</li>
+                                <li>0480-2760322, 2763771</li>
+                                <li>lordsvply@gmail.com</li>
                             </ul>
                         </div>
-                        <div className='px-3 sm:px-6'>
+                        {/* <div className='px-3 sm:px-6'>
 
                             <h3 className="text-lg sm:text-xl font-semibold mt-4 mb-2">Disclaimer</h3>
                             <ul className='text-sm sm:text-lg font-thin'>
                                 <li className='cursor-pointer hover:text-blue-700'>Disclosure</li>
                                 <li className='cursor-pointer hover:text-blue-700'>Dispute Resolution & Withdrawal Process</li>
                             </ul>
-                        </div>
+                        </div> */}
 
                     </div>
 
