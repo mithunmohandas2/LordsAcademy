@@ -9,10 +9,10 @@ Prerequisites :
 Node.js and npm installed on your system.
 
 Installation :
-Clone the repository (CLI): 'git clone https://github.com/mithunmohandas2/LordsAcademy'
-Navigate to the project directory
-Install dependencies: 'npm install' or 'npm i'
-Start the development server: 'npm run dev'
+1. Clone the repository (CLI): 'git clone https://github.com/mithunmohandas2/LordsAcademy'
+2. Navigate to the project directory
+3. Install dependencies: 'npm install' or 'npm i'
+4. Start the development server: 'npm run dev'
 
 Usage :
 Once the development server is running, access the Webpage in your browser at http://localhost:5173.
