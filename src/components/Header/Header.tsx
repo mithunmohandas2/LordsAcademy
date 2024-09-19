@@ -32,9 +32,18 @@ const Header = ({ location }: { location: string }) => {
         if (mainMenuRef.current && !mainMenuRef.current.contains(e.target)) {
             setIsOpen(false);
         }
-        if ((sideMenuRef.current && !sideMenuRef.current.contains(e.target)) && (!sideSubMenuRef.current.contains(e.target))) {
-            setIsSideMenuOpen(false);
-            setSelectedMenu(null);
+        if (sideMenuRef.current) {
+            // If submenu is open (exists in the DOM)
+            if (sideSubMenuRef.current && sideSubMenuRef.current.contains(e.target)) {
+                // Do nothing, click is inside the submenu
+                return;
+            }
+        
+            // If click is outside both sideMenu and sideSubMenu (if the submenu exists)
+            if (!sideMenuRef.current.contains(e.target)) {
+                setIsSideMenuOpen(false);
+                setSelectedMenu(null);
+            }
         }
     };
 
