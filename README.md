@@ -18,12 +18,12 @@ Usage :
 Once the development server is running, access the Webpage in your browser at http://localhost:5173.
 
 # Updating the website
-1. Adding new routes (sub pages): 
-   ● Go to : src > App.tsx  
-   ● Add new route in format : "<Route path="/newRoute" element={<SubPage location={"newRoute"} />} />"
-   ● Provide value for location same as route
+Adding new routes (sub pages): 
+1. Go to : src > App.tsx  
+2. Add new route in format : "<Route path="/newRoute" element={<SubPage location={"newRoute"} />} />"
+3. Provide value for location same as route
 
-2. Adding new Sub pages: 
-   ● Create a new subpage component in src > components folder (Refer to EGGS Life component)   
-   ● Go to : src > Pages > SubPages.tsx  
-   ● Assign the newly added component to SubPage with specific route in the format" {location === "newRoute" && <NewComponent />}"
+Adding new Sub pages: 
+1. Create a new subpage component in src > components folder (Refer to EGGS Life component)   
+2. Go to : src > Pages > SubPages.tsx  
+3. Assign the newly added component to SubPage with specific route in the format" {location === "newRoute" && <NewComponent />}"
