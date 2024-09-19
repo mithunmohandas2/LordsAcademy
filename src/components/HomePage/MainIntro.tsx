@@ -126,11 +126,11 @@ function MainInro() {
 
                     <div className="sm:flex justify-center sm:flex-row items-center gap-8">
 
-                        <div className="sm:w-2/3 flex flex-col">
-                            <img className="object-contain w-full mb-8 sm:mb-0 rounded-lg shadow-md" src={principal} alt="principal" />
+                        <div className="sm:w-2/3 flex flex-col mb-8 sm:mb-0">
+                            <img className="object-contain w-full rounded-lg shadow-md" src={principal} alt="principal" />
                             <p className="text-center">Fr.JOSE KIDANGAN</p>
-
                         </div>
+
                         <div className="sm:w-full flex">
                             <div className="relative w-full overflow-hidden" style={{ paddingTop: '56.25%' }}>
                                 <iframe
@@ -142,7 +142,6 @@ function MainInro() {
                                     allowFullScreen
                                 />
                             </div>
-
                         </div>
                     </div>
 
