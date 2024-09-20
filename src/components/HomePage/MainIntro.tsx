@@ -5,8 +5,8 @@ import "slick-carousel/slick/slick-theme.css";
 function MainInro() {
     // const banner = "/images/Banner.jpg";
     const principal = "https://www.lordsacademy.com/wp-content/uploads/2021/02/principal.jpg";
-    // const principalVideo = "/videos/videoBanner.mp4"
-    // const videoBanner = "/videos/videoBanner.mp4"
+    const principalVideo = "/videos/PrincipalSpeech.mp4"
+    const videoBanner = "/videos/videoBanner.mp4"
     const news = "Your News Here  Your News Here  Your News Here  Your News Here  Your News Here  Your News Here";
     const sliderImages = [
         "/images/carousel1.png",
@@ -34,9 +34,32 @@ function MainInro() {
                     </div>
                 </div>
 
-                <div className="absolute w-[180px] p-2 font-semibold top-[5vh] md:top-[8vh] xl:top-[10vh] lg:start-20 z-50">
+                {/* Banner image */}
+                {/* <img className="w-full" src={banner} alt="LORDS ACADEMY Banner" /> */}
+
+                <div className="relative w-full overflow-hidden" style={{ paddingTop: '56.25%' }}>
+                    {/* Responsive YouTube iframe container */}
+                    {/* <iframe
+                        className="absolute top-0 left-0 w-full h-full"
+                        src="https://www.youtube.com/embed/fIaxgppSi2c?autoplay=1&mute=1&loop=1&playlist=fIaxgppSi2c&controls=0&showinfo=0&modestbranding=1"
+                        title="YouTube video"
+                        frameBorder="0"
+                        allow="autoplay; encrypted-media"
+                        allowFullScreen
+                    /> */}
+
+                    {/* static video banner */}
+                    <div className="absolute top-0 left-0 w-full h-full">
+                        <video className="video 3xl:mx-auto" src={videoBanner} autoPlay muted loop controls style={{ width: '100%' }} >
+                            *Your browser does not support playing video.
+                        </video>
+                    </div>
+                </div>
+            </section>
+
+            <div className="absolute w-[180px] p-2 font-semibold top-[5vh] md:top-[8vh] xl:top-[10vh] lg:start-20 z-50">
                     <div className="flex flex-col justify-center w-full items-center">
-                        <img className="w-12 lg:w-20" src="/images/logo.png" alt="Lords Av=cademy Logo" />
+                        <img className="w-12 lg:w-20 zoomEffect" src="/images/logo.png" alt="Lords Av=cademy Logo" />
                         <h2>LORDS ACADEMY</h2>
 
                         <div className="hidden flex-col items-center md:flex opacity-70 z-50">
@@ -57,34 +80,14 @@ function MainInro() {
                             </a>
 
                             <div className="flex mt-2">
-                                <button className="mx-1 px-0.5 h-10 mb-2"><span className="material-symbols-outlined"> call </span></button>
-                                <button className="mx-1 px-0.5 h-10 mb-2"><span className="material-symbols-outlined"> location_on </span></button>
-                                <button className="mx-1 px-0.5 h-10 mb-2"><span className="material-symbols-outlined"> search </span></button>
-
+                                <a href="tel:+914802760322" target='_blank' className="mx-1 px-0.5 h-10 mb-2 cursor-pointer zoomEffect"><span className="material-symbols-outlined"> call </span></a>
+                                <a href="https://maps.app.goo.gl/u8NJLErYGpDP77c87" target="_blank" className="mx-1 px-0.5 h-10 mb-2 cursor-pointer zoomEffect"><span className="material-symbols-outlined"> location_on </span></a>
+                                <a className="mx-1 px-0.5 h-10 mb-2 cursor-pointer zoomEffect"><span className="material-symbols-outlined"> search </span></a>
                             </div>
                         </div>
 
                     </div>
-
                 </div>
-
-
-
-                {/* Banner image */}
-                {/* <img className="w-full" src={banner} alt="LORDS ACADEMY Banner" /> */}
-
-                {/* Responsive YouTube iframe container */}
-                <div className="relative w-full overflow-hidden" style={{ paddingTop: '56.25%' }}>
-                    <iframe
-                        className="absolute top-0 left-0 w-full h-full"
-                        src="https://www.youtube.com/embed/fIaxgppSi2c?autoplay=1&mute=1&loop=1&playlist=fIaxgppSi2c&controls=0&showinfo=0&modestbranding=1"
-                        title="YouTube video"
-                        frameBorder="0"
-                        allow="autoplay; encrypted-media"
-                        allowFullScreen
-                    />
-                </div>
-            </section>
 
 
 
@@ -133,22 +136,12 @@ function MainInro() {
                         </div>
 
                         <div className="sm:w-full flex">
-                            <div className="relative w-full overflow-hidden" style={{ paddingTop: '56.25%' }}>
-                                <iframe
-                                    className="absolute top-0 left-0 w-full h-full"
-                                    src="https://www.youtube.com/embed/fIaxgppSi2c?autoplay=1&mute=1&loop=1&playlist=fIaxgppSi2c&controls=0&showinfo=0&modestbranding=1"
-                                    title="YouTube video"
-                                    frameBorder="0"
-                                    allow="autoplay; encrypted-media"
-                                    allowFullScreen
-                                />
-                            </div>
-
-                            {/* <div className="mx-auto">
-                                <video className="video 3xl:mx-auto" src={videoBanner} autoPlay muted loop controls style={{ borderRadius: '10px', width: '100%' }} >
+                            <div className="mx-auto">
+                                <h5 className="mb-2 font-bold">Principal's Message</h5>
+                                <video className="video 3xl:mx-auto" src={principalVideo} autoPlay muted loop controls style={{ borderRadius: '10px', width: '100%' }} >
                                     *Your browser does not support playing video.
                                 </video>
-                            </div> */}
+                            </div>
                         </div>
                     </div>
 
