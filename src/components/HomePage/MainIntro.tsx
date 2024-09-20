@@ -136,7 +136,7 @@ function MainInro() {
 
                         <div className="sm:w-2/3 flex flex-col mb-8 sm:mb-0">
                             <img className="object-contain w-full rounded-lg shadow-md mx-auto" src={principal} alt="principal" />
-                            <p className="relative -mt-10 ms-3 text-center font-bold">Fr. JOSE KIDANGAN</p>
+                            <p className="relative -mt-10 ms-3 text-center font-bold text-gray-50">Fr. JOSE KIDANGAN</p>
                         </div>
 
                         <div className="sm:w-full flex">
