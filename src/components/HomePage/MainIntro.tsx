@@ -58,41 +58,41 @@ function MainInro() {
             </section>
 
             <div className="absolute w-[180px] p-2 font-semibold top-[5vh] md:top-[8vh] xl:top-[10vh] lg:start-20 z-50">
-                    <div className="flex flex-col justify-center w-full items-center">
-                        <img className="w-12 lg:w-20 zoomEffect" src="/images/logo.png" alt="Lords Av=cademy Logo" />
-                        <h2>LORDS ACADEMY</h2>
+                <div className="flex flex-col justify-center w-full items-center">
+                    <img className="w-12 lg:w-20 zoomEffect" src="/images/logo.png" alt="Lords Av=cademy Logo" />
+                    <h2>LORDS ACADEMY</h2>
 
-                        <div className="hidden flex-col items-center md:flex opacity-70 z-50">
+                    <div className="hidden flex-col items-center md:flex opacity-70 z-50">
 
-                            <button className="mt-12 lg:mt-20 xl:mt-24 2xl:mt-44 me-4 w-[90px] text-sm border-b text-end border-black transform -rotate-90 mb-12">Follow us</button>
+                        <button className="mt-12 lg:mt-20 xl:mt-24 2xl:mt-44 me-4 w-[90px] text-sm border-b text-end border-black transform -rotate-90 mb-12">Follow us</button>
 
-                            <a href="https://www.facebook.com" target="_blank" className='p-1 md:p-0 mb-1'>
-                                <img className='h-8 zoomEffect' src="/icons/facebook_outline.png" alt="Facebook" />
-                            </a>
-                            <a href="https://www.youtube.com/" target="_blank" className='p-1 md:p-0 mb-1'>
-                                <img className='h-8 zoomEffect' src="/icons/youtube_outline.png" alt="youtube" />
-                            </a>
-                            <a href="https://www.instagram.com" target="_blank" className='p-1 md:p-0 mb-1'>
-                                <img className='h-8 zoomEffect' src="/icons/instagram_outline.png" alt="Instagram" />
-                            </a>
-                            <a href="https://twitter.com" target="_blank" className='p-1 md:p-0 mb-1'>
-                                <img className='h-8 zoomEffect' src="/icons/twitter_outline.png" alt="Twitter" />
-                            </a>
+                        <a href="https://www.facebook.com" target="_blank" className='p-1 md:p-0 mb-1'>
+                            <img className='h-8 zoomEffect' src="/icons/facebook_outline.png" alt="Facebook" />
+                        </a>
+                        <a href="https://www.youtube.com/" target="_blank" className='p-1 md:p-0 mb-1'>
+                            <img className='h-8 zoomEffect' src="/icons/youtube_outline.png" alt="youtube" />
+                        </a>
+                        <a href="https://www.instagram.com" target="_blank" className='p-1 md:p-0 mb-1'>
+                            <img className='h-8 zoomEffect' src="/icons/instagram_outline.png" alt="Instagram" />
+                        </a>
+                        <a href="https://twitter.com" target="_blank" className='p-1 md:p-0 mb-1'>
+                            <img className='h-8 zoomEffect' src="/icons/twitter_outline.png" alt="Twitter" />
+                        </a>
 
-                            <div className="flex mt-2">
-                                <a href="tel:+914802760322" target='_blank' className="mx-1 px-0.5 h-10 mb-2 cursor-pointer zoomEffect"><span className="material-symbols-outlined"> call </span></a>
-                                <a href="https://maps.app.goo.gl/u8NJLErYGpDP77c87" target="_blank" className="mx-1 px-0.5 h-10 mb-2 cursor-pointer zoomEffect"><span className="material-symbols-outlined"> location_on </span></a>
-                                <a className="mx-1 px-0.5 h-10 mb-2 cursor-pointer zoomEffect"><span className="material-symbols-outlined"> search </span></a>
-                            </div>
+                        <div className="flex mt-2">
+                            <a href="tel:+914802760322" target='_blank' className="mx-1 px-0.5 h-10 mb-2 cursor-pointer zoomEffect"><span className="material-symbols-outlined"> call </span></a>
+                            <a href="https://maps.app.goo.gl/u8NJLErYGpDP77c87" target="_blank" className="mx-1 px-0.5 h-10 mb-2 cursor-pointer zoomEffect"><span className="material-symbols-outlined"> location_on </span></a>
+                            <a className="mx-1 px-0.5 h-10 mb-2 cursor-pointer zoomEffect"><span className="material-symbols-outlined"> search </span></a>
                         </div>
-
                     </div>
+
                 </div>
+            </div>
 
 
 
             <section id="banner" className="sm:flex justify-center sm:flex-row items-center gap-8">
-                <div className="sm:w-1/2 flex">
+                <div className="sm:w-[45%] flex">
                     <div className="mx-auto px-2">
                         <div className="flex items-center mt-10">
                             <div className="h-36 border-e-2 border-violetTxt py-10">
@@ -111,7 +111,7 @@ function MainInro() {
                 </div>
 
                 {/* Carousel Section */}
-                <div className="sm:w-1/2">
+                <div className="w-[94%] sm:w-[44%]">
                     <Slider {...sliderSettings}>
                         {sliderImages.map((image, index) => (
                             <div className="w-full h-[200px] sm:h-[450px]" key={index}>
@@ -122,26 +122,31 @@ function MainInro() {
                 </div>
             </section>
 
-            <section className="container-fluid bg-violetTxt p-5 md:p-10">
-                <br />
-                <div className="bg-white rounded-lg p-5 md:p-10">
-                    <h1 className="text-[2.2rem] text-center text-violetTxt font-semibold">Our Principal</h1>
-                    <hr className="m-5" />
+            <section className="container-fluid bg-violetTxt/70 pt-5 md:pt-10">
+
+                <div className="md:flex text-center md:justify-center md:gap-5 mt-2 mb-10 max-w-[800px] mx-auto">
+                    <h3 className="text-lg md:text-xl lg:text-2xl xl:text-3xl  text-white font-semibold"> Upcoming Events : </h3>
+                    <h3 className="text-lg md:text-xl lg:text-2xl xl:text-3xl  text-white">📅 September 12, 2024</h3>
+                    <h3 className="text-lg md:text-xl lg:text-2xl xl:text-3xl  text-white">Alumini Meet</h3>
+                </div>
+
+                <div className="bg-menubarBg py-5 md:py-10">
 
                     <div className="sm:flex justify-center sm:flex-row items-center gap-8">
 
                         <div className="sm:w-2/3 flex flex-col mb-8 sm:mb-0">
-                            <img className="object-contain w-full rounded-lg shadow-md" src={principal} alt="principal" />
-                            <p className="text-center">Fr.JOSE KIDANGAN</p>
+                            <img className="object-contain w-full rounded-lg shadow-md mx-auto" src={principal} alt="principal" />
+                            <p className="relative -mt-10 ms-3 text-center font-bold">Fr. JOSE KIDANGAN</p>
                         </div>
 
                         <div className="sm:w-full flex">
-                            <div className="mx-auto">
-                                <h5 className="mb-2 font-bold">Principal's Message</h5>
+                            <div className="mx-4 sm:mx-auto max-w-[600px]">
+                                <h5 className="mb-2 font-semibold text-xl text-gray-50">Principal's Message</h5>
                                 <video className="video 3xl:mx-auto" src={principalVideo} autoPlay muted loop controls style={{ borderRadius: '10px', width: '100%' }} >
                                     *Your browser does not support playing video.
                                 </video>
                             </div>
+
                         </div>
                     </div>
 
