@@ -3,7 +3,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 function MainInro() {
-    const banner = "/images/Banner.jpg";
+    // const banner = "/images/Banner.jpg";
     const principal = "https://www.lordsacademy.com/wp-content/uploads/2021/02/principal.jpg";
     const news = "Your News Here  Your News Here  Your News Here  Your News Here  Your News Here  Your News Here";
     const sliderImages = [
