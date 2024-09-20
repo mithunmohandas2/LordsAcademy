@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 function MainInro() {
     // const banner = "/images/Banner.jpg";
-    const principal = "https://www.lordsacademy.com/wp-content/uploads/2021/02/principal.jpg";
+    const principal = "/images/Principal.png";
     const principalVideo = "/videos/PrincipalSpeech.mp4"
     const videoBanner = "/videos/videoBanner.mp4"
     const news = "Your News Here  Your News Here  Your News Here  Your News Here  Your News Here  Your News Here";
