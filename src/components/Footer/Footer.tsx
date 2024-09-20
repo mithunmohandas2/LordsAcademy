@@ -82,7 +82,7 @@ function Footer() {
 
                 </div>
 
-                <div className="text-center mx-5 xl:mx-10 opacity-50 text-sm sm:text-lg font-thin">
+                <div className="text-center mx-5 xl:mx-10 opacity-50 text-sm sm:text-md font-thin">
                     <p >Copyright 2024 Integrated International School I CPE Registration No. 201012199C I Registration Period: 13/07/2024 to 12/07/2028 </p>
                     <p > EduTrust Certificate No. EDU-2-2145 I EduTrust Registration Period: 26/02/2022 to 25/02/2026.</p>
                 </div>

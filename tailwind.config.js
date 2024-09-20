@@ -12,7 +12,7 @@ export default {
       },
       colors: {
         specialCyan: "#67c1d3",
-        menubarBg: "#1c2638",
+        menubarBg: "#5A247B",
         violetTxt: "#7574a6",
       },
     }

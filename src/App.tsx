@@ -9,8 +9,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
-        <Route path="/EGGS Life" element={<SubPage location={"EGGS Life"} />} />
-        {/* Add new routes in the format above with path */}
+        <Route path="/blog" element={<SubPage location={"blog"} />} />
       </Routes>
     </>
   )

@@ -3,15 +3,14 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 function MainInro() {
-    const banner = "https://img.freepik.com/premium-photo/education-school-concept-little-student-girl-studying-school_380164-38668.jpg";
-    // const banner2 = "https://png.pngtree.com/thumb_back/fh260/background/20190221/ourmid/pngtree-school-season-back-to-school-season-blue-cartoon-image_11842.jpg";
+    const banner = "/images/Banner.jpg";
     const principal = "https://www.lordsacademy.com/wp-content/uploads/2021/02/principal.jpg";
     const news = "Your News Here  Your News Here  Your News Here  Your News Here  Your News Here  Your News Here";
     const sliderImages = [
-        "https://assets-homepages-learning.3plearning.net/wp-content/uploads/2020/06/blog-20-student-engagement-strategies-captivating-classroom.png",
-        "https://media.licdn.com/dms/image/D5612AQHMy2a77BYhng/article-cover_image-shrink_600_2000/0/1688493825862?e=2147483647&v=beta&t=3G8a1rukKM80hGN13ANRZrINbpnGBwwqAciz8I0KWUI",
-        "https://news.mit.edu/sites/default/files/styles/news_article__image_gallery/public/images/202403/MIT-SchoolQuality-01_0.jpg?itok=eIDmx516",
-        "https://www.oakridge.in/wp-content/uploads/2024/06/First-Day-School-e1718272560628.jpg"
+        "/images/carousel1.png",
+        "/images/carousel2.png",
+        "/images/carousel3.jpg",
+        "/images/carousel4.webp",
     ];
 
     const sliderSettings = {
@@ -27,8 +26,8 @@ function MainInro() {
     return (
         <>
             <section className="container-fluid relative -mt-28 -z-40">
-                <div className="absolute w-full bg-violetTxt/80 text-white py-0.5 font-semibold top-[35vh] sm:top-[50vh] md:top-[75vh] xl:top-[70vh] 2xl:top-[80vh] overflow-hidden z-40">
-                    <div className="animate-marquee whitespace-nowrap">
+                <div className="absolute w-full bg-violetTxt/80 text-white py-0.5 font-semibold top-[48vw] sm:top-[50vw] md:top-[52vw] xl:top-[48vw] 2xl:top-[50vw] overflow-hidden z-40">
+                    <div className="animate-marquee whitespace-nowrap z-50">
                         {news}
                     </div>
                 </div>
@@ -38,9 +37,9 @@ function MainInro() {
                         <img className="w-12 lg:w-20" src="/images/logo.png" alt="Lords Av=cademy Logo" />
                         <h2>LORDS ACADEMY</h2>
 
-                        <div className="hidden flex-col items-center md:flex opacity-70">
+                        <div className="hidden flex-col items-center md:flex opacity-70 z-50">
 
-                            <button className="mt-20 me-4 w-[90px] text-sm border-b text-end border-black transform -rotate-90 mb-12">Follow us</button>
+                            <button className="mt-12 lg:mt-20 xl:mt-24 2xl:mt-44 me-4 w-[90px] text-sm border-b text-end border-black transform -rotate-90 mb-12">Follow us</button>
 
                             <a href="https://www.facebook.com" target="_blank" className='p-1 md:p-0 mb-1'>
                                 <img className='h-8 zoomEffect' src="/icons/facebook_outline.png" alt="Facebook" />
@@ -70,10 +69,10 @@ function MainInro() {
 
 
                 {/* Banner image */}
-                <img className="w-full" src={banner} alt="LORDS ACADEMY Banner" />
+                {/* <img className="w-full" src={banner} alt="LORDS ACADEMY Banner" /> */}
 
                 {/* Responsive YouTube iframe container */}
-                {/* <div className="relative w-full overflow-hidden" style={{ paddingTop: '56.25%' }}> 
+                <div className="relative w-full overflow-hidden" style={{ paddingTop: '56.25%' }}> 
                     <iframe
                         className="absolute top-0 left-0 w-full h-full"
                         src="https://www.youtube.com/embed/fIaxgppSi2c?autoplay=1&mute=1&loop=1&playlist=fIaxgppSi2c&controls=0&showinfo=0&modestbranding=1"
@@ -82,7 +81,7 @@ function MainInro() {
                         allow="autoplay; encrypted-media"
                         allowFullScreen
                     />
-                </div> */}
+                </div>
             </section>
 
 

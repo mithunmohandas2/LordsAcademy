@@ -1,66 +1,70 @@
 export const menuList = [
     {
+        name: "Home",
+    },
+    {
         name: "About Us",
-        backgroundMain: "https://png.pngtree.com/png-vector/20231208/ourmid/pngtree-school-bound-little-boy-in-3d-illustration-png-image_11172979.png",
-        backgroundMini: "https://png.pngtree.com/png-vector/20231215/ourmid/pngtree-office-labor-work-business-men-free-buckle-elements-decorative-material-png-image_11357438.png",
+        backgroundMain: "/images/menuWallpaper.jpg",
+        backgroundMini: "/images/menuMiniWallpaper.png",
         subMenu: [
             {
-                name: "Mission"
+                name: "Our Campus"
             },
             {
-                name: "Core Values"
+                name: "Our Motto"
             },
             {
-                name: "Meet the Headmaster",
-            },
-            {
-                name: "Accreditation",
-            },
-            {
-                name: "Verbier and Switzerland",
-            },
-            {
-                name: "Careers",
-            },
-            {
-                name: "Policies",
-            },
-            {
-                name: "Governance",
-            },
-            {
-                name: "Faculty",
-            },
-            {
-                name: "Fees",
+                name: "Mission & Vision"
             },
         ]
     },
     {
-        name: "Information for Parents",
+        name: "Faculty",
     },
     {
-        name: "Academic",
+        name: "Academics & More",
+        backgroundMain: "/images/menuWallpaper.jpg",
+        backgroundMini: "/images/menuMiniWallpaper.png",
+        subMenu: [
+            {
+                name: "Co-curricular Activities"
+            },
+        ]
     },
     {
-        name: "Skills",
+        name: "Infrastructure",
     },
     {
-        name: "Care",
+        name: "Admission",
+        backgroundMain: "/images/menuWallpaper.jpg",
+        backgroundMini: "/images/menuMiniWallpaper.png",
+        subMenu: [
+            {
+                name: "Procedures"
+            },
+        ]
     },
     {
-        name: "Boarding at VIS",
+        name: "News & Events",
+        backgroundMain: "/images/menuWallpaper.jpg",
+        backgroundMini: "/images/menuMiniWallpaper.png",
+        subMenu: [
+            {
+                name: "Monthly News Letter"
+            },
+        ]
     },
     {
-        name: "Social wall",
+        name: "Gallery",
     },
     {
-        name: "Book a tour",
-    },
-    {
-        name: "Apply",
-    },
-    {
-        name: "Contact",
+        name: "Contact Us",
+        backgroundMain: "/images/menuWallpaper.jpg",
+        backgroundMini: "/images/menuMiniWallpaper.png",
+        subMenu: [
+            {
+                name: "Location Map"
+            },
+        ]
     },
 ]
