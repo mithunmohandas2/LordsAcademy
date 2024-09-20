@@ -8,13 +8,19 @@ export const menuList = [
         backgroundMini: "/images/menuMiniWallpaper.png",
         subMenu: [
             {
+                name: "Principal"
+            },
+            {
+                name: "Manager"
+            },
+            {
+                name: "Management"
+            },
+            {
+                name: "CMI"
+            },
+            {
                 name: "Our Campus"
-            },
-            {
-                name: "Our Motto"
-            },
-            {
-                name: "Mission & Vision"
             },
         ]
     },
@@ -22,49 +28,54 @@ export const menuList = [
         name: "Faculty",
     },
     {
-        name: "Academics & More",
+        name: "Academics",
         backgroundMain: "/images/menuWallpaper.jpg",
         backgroundMini: "/images/menuMiniWallpaper.png",
         subMenu: [
+            {
+                name: "Curricular Activities"
+            },
             {
                 name: "Co-curricular Activities"
             },
         ]
     },
     {
-        name: "Infrastructure",
-    },
-    {
-        name: "Admission",
+        name: "Facilities",
         backgroundMain: "/images/menuWallpaper.jpg",
         backgroundMini: "/images/menuMiniWallpaper.png",
         subMenu: [
             {
-                name: "Procedures"
+                name: "Infrastructure"
             },
-        ]
-    },
-    {
-        name: "News & Events",
-        backgroundMain: "/images/menuWallpaper.jpg",
-        backgroundMini: "/images/menuMiniWallpaper.png",
-        subMenu: [
             {
-                name: "Monthly News Letter"
+                name: "Park"
+            },
+            {
+                name: "Library"
+            },
+            {
+                name: "Transport"
             },
         ]
     },
     {
         name: "Gallery",
-    },
-    {
-        name: "Contact Us",
         backgroundMain: "/images/menuWallpaper.jpg",
         backgroundMini: "/images/menuMiniWallpaper.png",
         subMenu: [
             {
-                name: "Location Map"
+                name: "Videos"
+            },
+            {
+                name: "Photos"
             },
         ]
+    },
+    {
+        name: "Student Login",
+    },
+    {
+        name: "Contact",
     },
 ]
