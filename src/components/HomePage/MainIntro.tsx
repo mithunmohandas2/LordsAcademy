@@ -5,6 +5,8 @@ import "slick-carousel/slick/slick-theme.css";
 function MainInro() {
     // const banner = "/images/Banner.jpg";
     const principal = "https://www.lordsacademy.com/wp-content/uploads/2021/02/principal.jpg";
+    // const principalVideo = "/videos/videoBanner.mp4"
+    // const videoBanner = "/videos/videoBanner.mp4"
     const news = "Your News Here  Your News Here  Your News Here  Your News Here  Your News Here  Your News Here";
     const sliderImages = [
         "/images/carousel1.png",
@@ -143,7 +145,7 @@ function MainInro() {
                             </div>
 
                             {/* <div className="mx-auto">
-                                <video className="video 3xl:mx-auto" src={videoLink} autoPlay muted loop controls style={{ borderRadius: '10px', width: '100%' }} >
+                                <video className="video 3xl:mx-auto" src={videoBanner} autoPlay muted loop controls style={{ borderRadius: '10px', width: '100%' }} >
                                     *Your browser does not support playing video.
                                 </video>
                             </div> */}
