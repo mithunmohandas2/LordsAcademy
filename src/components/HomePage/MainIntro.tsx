@@ -72,7 +72,7 @@ function MainInro() {
                 {/* <img className="w-full" src={banner} alt="LORDS ACADEMY Banner" /> */}
 
                 {/* Responsive YouTube iframe container */}
-                <div className="relative w-full overflow-hidden" style={{ paddingTop: '56.25%' }}> 
+                <div className="relative w-full overflow-hidden" style={{ paddingTop: '56.25%' }}>
                     <iframe
                         className="absolute top-0 left-0 w-full h-full"
                         src="https://www.youtube.com/embed/fIaxgppSi2c?autoplay=1&mute=1&loop=1&playlist=fIaxgppSi2c&controls=0&showinfo=0&modestbranding=1"
@@ -141,6 +141,12 @@ function MainInro() {
                                     allowFullScreen
                                 />
                             </div>
+
+                            {/* <div className="mx-auto">
+                                <video className="video 3xl:mx-auto" src={videoLink} autoPlay muted loop controls style={{ borderRadius: '10px', width: '100%' }} >
+                                    *Your browser does not support playing video.
+                                </video>
+                            </div> */}
                         </div>
                     </div>
 
