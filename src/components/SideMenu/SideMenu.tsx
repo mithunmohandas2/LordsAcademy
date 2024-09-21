@@ -1,11 +1,13 @@
 import { useEffect, useRef, useState } from "react";
 import { menuList } from "../../assets/menuList";
+import { Link } from "react-router-dom";
 
 interface menuData {
     name: string,
     backgroundMain: string,
-    backgroundMini: string
+    link?: any;
     subMenu: {
+        link?: any;
         name: string;
     }[],
 }
@@ -62,17 +64,23 @@ function SideMenu({ isSideMenuOpen, setIsSideMenuOpen, location }: { isSideMenuO
 
                         <div className="flex flex-col my-4 py-5 w-full">
                             {menuList?.length && menuList.map((menu) => (
-                                <button className={`text-md px-4 py-2 text-start border-b font-semibold text-black ${selectedMenu?.name === menu.name && 'bg-black text-gray-50'}`}
-                                    onClick={() => {
-                                        if (menu?.subMenu?.length) setSelectedMenu({
-                                            subMenu: menu?.subMenu,
-                                            name: menu?.name,
-                                            backgroundMain: menu?.backgroundMain,
-                                            backgroundMini: menu?.backgroundMini,
-                                        });
-                                        else setSelectedMenu(null);
-                                    }}> {menu?.name}
-                                </button>
+                                menu?.link ?
+                                    <Link className="w-full border-b" to={menu?.link}>
+                                        <button className={`text-md px-4 py-2 text-start font-semibold text-black ${selectedMenu?.name === menu.name && 'bg-black text-gray-50'}`}>
+                                            {menu?.name}
+                                        </button>
+                                    </Link>
+                                    :
+                                    <button className={`text-md px-4 py-2 text-start border-b font-semibold text-black ${selectedMenu?.name === menu.name && 'bg-black text-gray-50'}`}
+                                        onMouseEnter={() => {
+                                            if (menu?.subMenu?.length) setSelectedMenu({
+                                                subMenu: menu?.subMenu,
+                                                name: menu?.name,
+                                                backgroundMain: menu?.backgroundMain,
+                                            });
+                                            else setSelectedMenu(null);
+                                        }}> {menu?.name}
+                                    </button>
                             ))}
                         </div>
 
@@ -102,10 +110,14 @@ function SideMenu({ isSideMenuOpen, setIsSideMenuOpen, location }: { isSideMenuO
                     <div className="flex flex-col w-full h-full justify-center overflow-hidden">
                         <div className="flex flex-col px-4 my-4 py-5 w-full">
                             <div className="flex w-full justify-end">
-                                <img className="w-[70%] mb-2" src={selectedMenu?.backgroundMini} alt="Lords Academy Logo" />
                             </div>
                             {selectedMenu?.subMenu?.length && selectedMenu?.subMenu.map((menu) => (
-                                <button className={`text-md px-2 py-2 text-end border-b border-gray-900`}> {menu?.name} </button>
+                                menu?.link ?
+                                    <Link className="w-full border-b border-gray-900" to={menu?.link}>
+                                        <button className={`text-md px-2 py-2 ${location === 'home' ? 'text-end' : 'text-start'}`}> {menu?.name} </button>
+                                    </Link>
+                                    :
+                                    <button className={`text-md px-2 py-2 border-b border-gray-900 ${location === 'home' ? 'text-end' : 'text-start'}`}> {menu?.name} </button>
                             ))}
                         </div>
                     </div>

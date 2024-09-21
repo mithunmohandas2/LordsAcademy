@@ -1,11 +1,11 @@
 export const menuList = [
     {
         name: "Home",
+        link: "/",
     },
     {
         name: "About Us",
         backgroundMain: "/images/menuWallpaper.jpg",
-        backgroundMini: "/images/menuMiniWallpaper.png",
         subMenu: [
             {
                 name: "Principal"
@@ -30,7 +30,6 @@ export const menuList = [
     {
         name: "Academics",
         backgroundMain: "/images/menuWallpaper.jpg",
-        backgroundMini: "/images/menuMiniWallpaper.png",
         subMenu: [
             {
                 name: "Curricular Activities"
@@ -43,7 +42,6 @@ export const menuList = [
     {
         name: "Facilities",
         backgroundMain: "/images/menuWallpaper.jpg",
-        backgroundMini: "/images/menuMiniWallpaper.png",
         subMenu: [
             {
                 name: "Infrastructure"
@@ -62,7 +60,6 @@ export const menuList = [
     {
         name: "Gallery",
         backgroundMain: "/images/menuWallpaper.jpg",
-        backgroundMini: "/images/menuMiniWallpaper.png",
         subMenu: [
             {
                 name: "Videos"
@@ -77,5 +74,6 @@ export const menuList = [
     },
     {
         name: "Contact",
+        link: "/contact",
     },
 ]

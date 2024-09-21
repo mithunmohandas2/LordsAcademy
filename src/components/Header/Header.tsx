@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import SideMenu from "../SideMenu/SideMenu";
 
 const Header = ({ location }: { location: string }) => {
@@ -71,7 +71,7 @@ const Header = ({ location }: { location: string }) => {
                                 <div className="text-xl font-semibold"> ADMISSION </div>
                                 <div className="text-xl font-semibold"> FEE </div>
                                 <div className="text-xl font-semibold"> STUDENT LOGIN </div>
-                                <div className="text-xl font-semibold"> CONTACT </div>
+                                <Link to={"/contact"}> <div className="text-xl font-semibold"> CONTACT </div></Link>
 
                             </div>
                         </div>
@@ -82,7 +82,7 @@ const Header = ({ location }: { location: string }) => {
                         <div className="font-semibold cursor-pointer hover:text-blue-700 zoomEffect"> ADMISSION </div>
                         <div className="font-semibold cursor-pointer hover:text-blue-700 zoomEffect"> FEE </div>
                         <div className="font-semibold cursor-pointer hover:text-blue-700 zoomEffect"> STUDENT LOGIN </div>
-                        <div className="font-semibold cursor-pointer hover:text-blue-700 zoomEffect"> CONTACT </div>
+                        <Link to={"/contact"}> <div className="font-semibold cursor-pointer hover:text-blue-700 zoomEffect"> CONTACT </div></Link>
                         {location === 'home' && <div className="ms-5 text-xl cursor-pointer hover:opacity-70 flex items-center" onClick={toggleSideMenu} >
                             MENU  <span className="text-4xl pb-3"> &#9776;</span>
                         </div>}

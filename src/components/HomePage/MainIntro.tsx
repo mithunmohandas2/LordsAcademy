@@ -1,10 +1,11 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import UpcomingEvents from "../UpcomingEvents/UpcomingEvents";
 
 function MainInro() {
     // const banner = "/images/Banner.jpg";
-    const principal = "/images/Principal.png";
+    const principal = "/images/Principal.jpg";
     const principalVideo = "/videos/PrincipalSpeech.mp4"
     const videoBanner = "/videos/videoBanner.mp4"
     const news = "Your News Here  Your News Here  Your News Here  Your News Here  Your News Here  Your News Here";
@@ -28,7 +29,7 @@ function MainInro() {
     return (
         <>
             <section className="container-fluid relative -mt-28 -z-40">
-                <div className="absolute w-full bg-violetTxt/80 text-white py-0.5 font-semibold top-[48vw] sm:top-[50vw] md:top-[52vw] xl:top-[48vw] 2xl:top-[50vw] overflow-hidden z-40">
+                <div className="absolute w-full bg-violetTxt/80 text-white py-0.5 font-semibold top-[48vw] sm:top-[50vw] md:top-[52vw] xl:top-[48vw] 2xl:top-[70vh] overflow-hidden z-40">
                     <div className="animate-marquee whitespace-nowrap z-50">
                         {news}
                     </div>
@@ -122,27 +123,25 @@ function MainInro() {
                 </div>
             </section>
 
-            <section className="container-fluid bg-violetTxt/70 pt-5 md:pt-10">
+            <section className="container-fluid bg-[#b1b0de] pt-5 md:pt-10">
 
-                <div className="md:flex text-center md:justify-center md:gap-5 mt-2 mb-10 max-w-[800px] mx-auto">
-                    <h3 className="text-lg md:text-xl lg:text-2xl xl:text-3xl  text-white font-semibold"> Upcoming Events : </h3>
-                    <h3 className="text-lg md:text-xl lg:text-2xl xl:text-3xl  text-white">📅 September 12, 2024</h3>
-                    <h3 className="text-lg md:text-xl lg:text-2xl xl:text-3xl  text-white">Alumini Meet</h3>
-                </div>
+                <UpcomingEvents />
 
-                <div className="bg-menubarBg py-5 md:py-10">
+                <div className="bg-[#565593] py-5 md:py-0">
 
-                    <div className="sm:flex justify-center sm:flex-row items-center gap-8">
+                    <div className="sm:flex justify-center sm:flex-row items-center gap-8 sm:gap-0">
 
-                        <div className="sm:w-2/3 flex flex-col mb-8 sm:mb-0">
-                            <img className="object-contain w-full rounded-lg shadow-md mx-auto" src={principal} alt="principal" />
-                            <p className="relative -mt-10 ms-3 text-center font-bold text-gray-50">Fr. JOSE KIDANGAN</p>
+                        <div className="flex flex-col mb-8 sm:mb-0">
+                            <div className="sm:max-w-[600px]">
+                                <img className="object-contain w-full mx-auto px-10 sm:px-0" src={principal} alt="principal" />
+                                <p className="text-center lg:text-2xl font-bold relative -mt-10 lg:-mt-12 bg-violet-900/60 mx-10 sm:mx-0 py-2 text-white">Fr. JOSE KIDANGAN CMI</p>
+                            </div>
                         </div>
 
-                        <div className="sm:w-full flex">
-                            <div className="mx-4 sm:mx-auto max-w-[600px]">
-                                <h5 className="mb-2 font-semibold text-xl text-gray-50">Principal's Message</h5>
-                                <video className="video 3xl:mx-auto" src={principalVideo} autoPlay muted loop controls style={{ borderRadius: '10px', width: '100%' }} >
+                        <div className="flex">
+                            <div className="mx-4 sm:mx-0 max-w-[600px]">
+                                <h5 className="mb-2 font-semibold text-xl 2xl:text-2xl text-gray-50 sm:p-6">Principal's Message</h5>
+                                <video className="video 3xl:mx-auto" src={principalVideo} autoPlay muted loop controls style={{ width: '100%' }} >
                                     *Your browser does not support playing video.
                                 </video>
                             </div>

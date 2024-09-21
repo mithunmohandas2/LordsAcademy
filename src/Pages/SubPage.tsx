@@ -3,6 +3,7 @@ import EggsLife from "../components/EggsLife/EggsLife"
 import Footer from "../components/Footer/Footer"
 import Header from "../components/Header/Header"
 import SideMenu from "../components/SideMenu/SideMenu"
+import Contact from "../components/ContactUs/Contact";
 
 function SubPage({ location }: { location: string }) {
     const [isSideMenuOpen, setIsSideMenuOpen] = useState(false);
@@ -26,11 +27,12 @@ function SubPage({ location }: { location: string }) {
 
                     {/* SubPage Contents */}
                     {location === "blog" && <EggsLife />}
+                    {location === "contact" && <Contact />}
 
                 </div>
 
                 <div className="w-full h-5 bg-yellow-400/70"></div>
-                <Footer />
+                {location !== "contact" && <Footer />}
             </div>
 
         </div>

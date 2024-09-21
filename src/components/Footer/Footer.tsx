@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import logo from "/images/logo.png"
 
 function Footer() {
@@ -62,7 +63,7 @@ function Footer() {
                         </div>
                         <div className='px-3 sm:px-6 col-span-2 md:col-span-1'>
 
-                            <h3 className="text-lg sm:text-xl font-semibold mt-4 mb-2">Contact</h3>
+                            <Link to={"/contact"}> <h3 className="text-lg sm:text-xl font-semibold mt-4 mb-2 cursor-pointer">Contact</h3></Link>
                             <ul className='text-sm sm:text-lg font-thin'>
                                 <li>Lord’s Academy CMI ICSE School Varandarappilly Thrissur, Kerala - 680303</li>
                                 <li>0480-2760322, 2763771</li>
