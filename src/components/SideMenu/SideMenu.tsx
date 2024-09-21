@@ -12,6 +12,8 @@ interface menuData {
     }[],
 }
 
+// Change the menu options from 'assets > menuList' file
+
 const menuBgStyle = {
     backgroundImage: `url('/images/menuWallpaper.jpg')`,
     backgroundSize: 'cover',

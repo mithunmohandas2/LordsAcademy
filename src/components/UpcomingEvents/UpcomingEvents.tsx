@@ -2,8 +2,9 @@ import { useEffect, useState } from "react";
 
 function UpcomingEvents() {
     const [currentIndex, setCurrentIndex] = useState(0);
-    const [animation, setAnimation] = useState<'flyIn' | 'flyOut'>('flyIn'); // Manage both flyIn and flyOut animations
+    const [animation, setAnimation] = useState<'flyIn' | 'flyOut'>('flyIn');
 
+    // add or delete the upcoming events in the below format
     const events = [
         { date: "September 12, 2024", event: "Annual Meet" },
         { date: "September 13, 2024", event: "Sports Competition" },
@@ -13,16 +14,14 @@ function UpcomingEvents() {
 
     useEffect(() => {
         const interval = setInterval(() => {
-            setAnimation('flyOut'); // Trigger fly-out animation
-
-            // After 0.5s (matching the fly-out animation duration), change the content and trigger fly-in
+            setAnimation('flyOut');
             setTimeout(() => {
                 setCurrentIndex((prevIndex) => (prevIndex + 1) % events.length);
-                setAnimation('flyIn'); // Trigger fly-in animation
+                setAnimation('flyIn');
             }, 500);
         }, 7000);
 
-        return () => clearInterval(interval); // Cleanup on component unmount
+        return () => clearInterval(interval);
     }, []);
 
     return (
