@@ -1,4 +1,3 @@
-import React from "react";
 import { useState, ReactNode } from "react";
 
 interface TooltipProps {
