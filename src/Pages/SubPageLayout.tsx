@@ -1,9 +1,13 @@
 import { useState } from "react";
-import EggsLife from "../components/EggsLife/EggsLife"
+import LordsLife from "../components/SubPageComponents/LordsLife"
 import Footer from "../components/Footer/Footer"
 import Header from "../components/Header/Header"
 import SideMenu from "../components/SideMenu/SideMenu"
 import Contact from "../components/ContactUs/Contact";
+import Page1 from "../components/SubPageComponents/Page1";
+import Page2 from "../components/SubPageComponents/Page2";
+import Page3 from "../components/SubPageComponents/Page3";
+import Page4 from "../components/SubPageComponents/Page4";
 
 function SubPage({ location }: { location: string }) {
     const [isSideMenuOpen, setIsSideMenuOpen] = useState(false);
@@ -26,8 +30,12 @@ function SubPage({ location }: { location: string }) {
                 <div className="my-10">
 
                     {/* SubPage Contents */}
-                    {location === "blog" && <EggsLife />}
+                    {location === "blog" && <LordsLife />}
                     {location === "contact" && <Contact />}
+                    {location === "page1" && <Page1 />}
+                    {location === "page2" && <Page2 />}
+                    {location === "page3" && <Page3 />}
+                    {location === "page4" && <Page4 />}
 
                 </div>
 

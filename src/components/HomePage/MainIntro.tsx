@@ -7,7 +7,7 @@ function MainInro() {
     // const banner = "/images/Banner.jpg";
     const principal = "/images/Principal.jpg";
     const principalVideo = "/videos/PrincipalSpeech.mp4"
-    const videoBanner = "/videos/videoBanner.mp4"
+    // const videoBanner = "/videos/videoBanner.mp4"
     const news = "Your News Here  Your News Here  Your News Here  Your News Here  Your News Here  Your News Here";
     const sliderImages = [
         "/images/carousel1.png",
@@ -40,21 +40,21 @@ function MainInro() {
 
                 <div className="relative w-full overflow-hidden" style={{ paddingTop: '56.25%' }}>
                     {/* Responsive YouTube iframe container */}
-                    {/* <iframe
+                    <iframe
                         className="absolute top-0 left-0 w-full h-full"
                         src="https://www.youtube.com/embed/fIaxgppSi2c?autoplay=1&mute=1&loop=1&playlist=fIaxgppSi2c&controls=0&showinfo=0&modestbranding=1"
                         title="YouTube video"
                         frameBorder="0"
                         allow="autoplay; encrypted-media"
                         allowFullScreen
-                    /> */}
+                    />
 
                     {/* static video banner */}
-                    <div className="absolute top-0 left-0 w-full h-full">
+                    {/* <div className="absolute top-0 left-0 w-full h-full">
                         <video className="video 3xl:mx-auto" src={videoBanner} autoPlay muted loop controls style={{ width: '100%' }} >
                             *Your browser does not support playing video.
                         </video>
-                    </div>
+                    </div> */}
                 </div>
             </section>
 
@@ -81,6 +81,7 @@ function MainInro() {
                         </a>
 
                         <div className="flex mt-2">
+                            {/* <div className="bg-white absolute px-2 w-[200px] text-center rounded hover:zoomEffect">0480-2760322 | 2763771</div> */}
                             <a href="tel:+914802760322" target='_blank' className="mx-1 px-0.5 h-10 mb-2 cursor-pointer zoomEffect"><span className="material-symbols-outlined"> call </span></a>
                             <a href="https://maps.app.goo.gl/u8NJLErYGpDP77c87" target="_blank" className="mx-1 px-0.5 h-10 mb-2 cursor-pointer zoomEffect"><span className="material-symbols-outlined"> location_on </span></a>
                             <a className="mx-1 px-0.5 h-10 mb-2 cursor-pointer zoomEffect"><span className="material-symbols-outlined"> search </span></a>
