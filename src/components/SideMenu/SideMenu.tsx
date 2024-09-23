@@ -60,8 +60,8 @@ function SideMenu({ isSideMenuOpen, setIsSideMenuOpen, location }: { isSideMenuO
                     <div className="flex flex-col w-full h-full justify-between overflow-hidden">
 
                         <div className={`w-full flex justify-center items-center text-xl font-semibold gap-2`}>
-                            <h1 className="text-violetTxt">LORDS ACADEMY</h1>
-                            <img className="w-14" src="/images/logo.png" alt="Lords Academy Logo" />
+                            <h1 className="text-violetTxt">LORD'S ACADEMY</h1>
+                            <img className="w-14" src="/images/logo.png" alt="Lord's Academy Logo" />
                         </div>
 
                         <div className="flex flex-col my-4 py-5 w-full">

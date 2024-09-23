@@ -1,4 +1,4 @@
-# Website for Lords Academy
+# Website for Lord's Academy
 This project is created using React with Typescript and Tailwind CSS.
 Please refer 'https://tailwindcss.com/' for details about style sheets.
 
@@ -24,6 +24,6 @@ Adding new routes (sub pages):
 3. Provide value for location same as route
 
 Adding new Sub pages: 
-1. Create a new subpage component in src > components folder (Refer to Lords Life component)   
+1. Create a new subpage component in src > components folder (Refer to Lord's Life component)   
 2. Go to : src > Pages > SubPages.tsx  
 3. Assign the newly added component to SubPage with specific route in the format" {location === "newRoute" && <NewComponent />}"

@@ -11,9 +11,9 @@ function Footer() {
                     <div className="md:min-w-[400px] 2xl:min-w-[800px]">
 
                         <div className={`flex justify-center lg:justify-start items-center text-2xl font-semibold gap-3`}>
-                            <img className="w-20" src={logo} alt="Lords Av=cademy Logo" />
+                            <img className="w-20" src={logo} alt="Lord's Academy Logo" />
                             <div className="flex flex-col text-specialCyan">
-                                <h1>LORDS</h1>
+                                <h1>LORD'S</h1>
                                 <h1>ACADEMY</h1>
                             </div>
                         </div>

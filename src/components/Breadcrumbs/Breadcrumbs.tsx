@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export function Breadcrumbs({ location }: { location: string }) {
+export function Breadcrumbs({ pageTitle, link }: { pageTitle: string, link: string }) {
     return (
         <nav aria-label="breadcrumb">
             <ol className="breadcrumb flex py-2">
@@ -9,7 +9,7 @@ export function Breadcrumbs({ location }: { location: string }) {
                     <span className="mx-2"> ► </span>
                 </li>
                 <li>
-                    <Link to={`/${location}`} className="hover:underline hover:text-blue-700">{location}</Link>
+                    <Link to={`/${link}`} className="hover:underline hover:text-blue-700">{pageTitle}</Link>
                 </li>
             </ol>
         </nav>

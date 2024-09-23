@@ -13,9 +13,9 @@ function App() {
         <Route path="/contact" element={<SubPage location={"contact"} />} />
 
         {/* dummy subpages */}
-        <Route path="/page1" element={<SubPage location={"page1"} />} />
-        <Route path="/page2" element={<SubPage location={"page2"} />} />
-        <Route path="/page3" element={<SubPage location={"page3"} />} />
+        <Route path="/admission" element={<SubPage location={"admission"} />} />
+        <Route path="/fee" element={<SubPage location={"fee"} />} />
+        <Route path="/student_login" element={<SubPage location={"student_login"} />} />
         <Route path="/page4" element={<SubPage location={"page4"} />} />
       </Routes>
     </>

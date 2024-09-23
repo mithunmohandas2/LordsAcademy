@@ -48,8 +48,8 @@ const Header = ({ location }: { location: string }) => {
                 <div className="flex justify-between items-center">
 
                     <div className={`flex items-center text-2xl font-semibold gap-3 ${location === 'home' && 'opacity-0'}`}>
-                        <img onClick={() => Navigate("/")} className="w-20 cursor-pointer zoomEffect" src="/images/logo.png" alt="Lords Academy Logo" />
-                        <h1>LORDS <span className="text-specialCyan">ACADEMY</span></h1>
+                        <img onClick={() => Navigate("/")} className="w-20 cursor-pointer zoomEffect" src="/images/logo.png" alt="Lord's Academy Logo" />
+                        <h1>LORD'S <span className="text-specialCyan">ACADEMY</span></h1>
                     </div>
 
                     {/* Mobile Mode */}
@@ -68,9 +68,9 @@ const Header = ({ location }: { location: string }) => {
                                 <div className="flex items-center justify-end px-4 w-full ">
                                     <span className="material-symbols-outlined cursor-pointer" onClick={toggleMainMenu}> close </span>
                                 </div>
-                                <div className="text-xl font-semibold"> ADMISSION </div>
-                                <div className="text-xl font-semibold"> FEE </div>
-                                <div className="text-xl font-semibold"> STUDENT LOGIN </div>
+                                <Link to={"/admission"}>  <div className="text-xl font-semibold"> ADMISSION </div> </Link>
+                                <Link to={"/fee"}> <div className="text-xl font-semibold"> FEE </div></Link>
+                                <Link to={"/student_login"}> <div className="text-xl font-semibold">  STUDENT LOGIN  </div></Link>
                                 <Link to={"/contact"}> <div className="text-xl font-semibold"> CONTACT </div></Link>
 
                             </div>
@@ -79,10 +79,10 @@ const Header = ({ location }: { location: string }) => {
 
                     {/* Large display Header */}
                     <div className="items-center hidden md:flex md:gap-5 mt-2 text-xs lg:text-sm xl:text-md 2xl:text-lg">
-                        <div className="font-semibold cursor-pointer hover:text-blue-700 zoomEffect"> ADMISSION </div>
-                        <div className="font-semibold cursor-pointer hover:text-blue-700 zoomEffect"> FEE </div>
-                        <div className="font-semibold cursor-pointer hover:text-blue-700 zoomEffect"> STUDENT LOGIN </div>
-                        <Link to={"/contact"}> <div className="font-semibold cursor-pointer hover:text-blue-700 zoomEffect"> CONTACT </div></Link>
+                        <Link to={"/admission"}> <div className="font-semibold cursor-pointer hover:text-blue-700 zoomEffect"> ADMISSION </div> </Link>
+                        <Link to={"/fee"}> <div className="font-semibold cursor-pointer hover:text-blue-700 zoomEffect"> FEE </div> </Link>
+                        <Link to={"/student_login"}> <div className="font-semibold cursor-pointer hover:text-blue-700 zoomEffect"> STUDENT LOGIN </div> </Link>
+                        <Link to={"/contact"}> <div className="font-semibold cursor-pointer hover:text-blue-700 zoomEffect"> CONTACT </div> </Link>
                         {location === 'home' && <div className="ms-5 text-xl cursor-pointer hover:opacity-70 flex items-center" onClick={toggleSideMenu} >
                             MENU  <span className="text-4xl pb-3"> &#9776;</span>
                         </div>}

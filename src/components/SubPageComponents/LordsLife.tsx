@@ -5,7 +5,7 @@ function LordsLife() {
         <>
             <div className="min-h-screen lg:py-5">
                 <div className="max-w-4xl mx-auto px-6">
-                    <Breadcrumbs location={"Lords Life"} />
+                    <Breadcrumbs pageTitle={"Lord's Life"} link={"/blog"} />
 
                     <div className="text-start my-10">
                         <h1 className="text-4xl font-bold text-gray-800">LORD'S Life</h1>
@@ -22,7 +22,7 @@ function LordsLife() {
                     <div className="sm:w-[65%] flex">
                         <img
                             src="https://media.istockphoto.com/id/1447889800/photo/two-college-student-female-friends-smiling-ready-for-classes-at-the-university-campus.jpg?s=612x612&w=0&k=20&c=IIxWOgexUu8DHDq_jPNMgPeoqsy77w9da_-9dUZeQD4="
-                            alt="Lords Students"
+                            alt="Lord's Academy Students"
                             className="shadow-lg w-full max-w-4xl"
                         />
                     </div>

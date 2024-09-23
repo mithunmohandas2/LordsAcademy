@@ -13,6 +13,7 @@ export default {
         specialCyan: "#67c1d3",
         menubarBg: "#1c2638",
         violetTxt: "#7574a6",
+        violetBg: "#565593",
       },
       keyframes: {
         flyInTop: {

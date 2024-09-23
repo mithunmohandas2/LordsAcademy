@@ -4,9 +4,9 @@ import Footer from "../components/Footer/Footer"
 import Header from "../components/Header/Header"
 import SideMenu from "../components/SideMenu/SideMenu"
 import Contact from "../components/ContactUs/Contact";
-import Page1 from "../components/SubPageComponents/Page1";
-import Page2 from "../components/SubPageComponents/Page2";
-import Page3 from "../components/SubPageComponents/Page3";
+import Admission from "../components/SubPageComponents/Admission";
+import Fee from "../components/SubPageComponents/Fee";
+import StudentLogin from "../components/SubPageComponents/StudentLogin";
 import Page4 from "../components/SubPageComponents/Page4";
 
 function SubPage({ location }: { location: string }) {
@@ -32,9 +32,9 @@ function SubPage({ location }: { location: string }) {
                     {/* SubPage Contents */}
                     {location === "blog" && <LordsLife />}
                     {location === "contact" && <Contact />}
-                    {location === "page1" && <Page1 />}
-                    {location === "page2" && <Page2 />}
-                    {location === "page3" && <Page3 />}
+                    {location === "admission" && <Admission />}
+                    {location === "fee" && <Fee />}
+                    {location === "student_login" && <StudentLogin />}
                     {location === "page4" && <Page4 />}
 
                 </div>

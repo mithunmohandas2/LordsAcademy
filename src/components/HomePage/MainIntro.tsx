@@ -2,13 +2,15 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import UpcomingEvents from "../UpcomingEvents/UpcomingEvents";
+import { useState } from "react";
 
 function MainInro() {
+    const [news] = useState("Your News Here  Your News Here  Your News Here  Your News Here  Your News Here  Your News Here");
+
     // const banner = "/images/Banner.jpg";
+    // const videoBanner = "/videos/videoBanner.mp4"
     const principal = "/images/Principal.jpg";
     const principalVideo = "/videos/PrincipalSpeech.mp4"
-    // const videoBanner = "/videos/videoBanner.mp4"
-    const news = "Your News Here  Your News Here  Your News Here  Your News Here  Your News Here  Your News Here";
     const sliderImages = [
         "/images/carousel1.png",
         "/images/carousel2.png",
@@ -30,13 +32,16 @@ function MainInro() {
         <>
             <section className="container-fluid relative -mt-28 -z-40">
                 <div className="absolute w-full bg-violetTxt/80 text-white py-0.5 font-semibold top-[48vw] sm:top-[50vw] md:top-[52vw] xl:top-[48vw] 2xl:top-[70vh] overflow-hidden z-40">
-                    <div className="animate-marquee whitespace-nowrap z-50">
-                        {news}
+                    <div className="flex">
+                        <button className="px-2 lg:px-3 2xl:px-4 bg-violetBg z-50">Announcement</button>
+                        <div className="animate-marquee whitespace-nowrap z-40">
+                            {news}
+                        </div>
                     </div>
                 </div>
 
                 {/* Banner image */}
-                {/* <img className="w-full" src={banner} alt="LORDS ACADEMY Banner" /> */}
+                {/* <img className="w-full" src={banner} alt="LORD'S ACADEMY Banner" /> */}
 
                 <div className="relative w-full overflow-hidden" style={{ paddingTop: '56.25%' }}>
                     {/* Responsive YouTube iframe container */}
@@ -60,8 +65,8 @@ function MainInro() {
 
             <div className="absolute w-[180px] p-2 font-semibold top-[5vh] md:top-[8vh] xl:top-[10vh] lg:start-20 z-50">
                 <div className="flex flex-col justify-center w-full items-center">
-                    <img className="w-12 lg:w-20 zoomEffect" src="/images/logo.png" alt="Lords Av=cademy Logo" />
-                    <h2>LORDS ACADEMY</h2>
+                    <img className="w-12 lg:w-20 zoomEffect" src="/images/logo.png" alt="Lord's Academy Logo" />
+                    <h2>LORD'S ACADEMY</h2>
 
                     <div className="hidden flex-col items-center md:flex opacity-70 z-50">
 
@@ -101,7 +106,7 @@ function MainInro() {
                                 <p className="font-semibold px-2 text-center">WELCOME TO</p>
                             </div>
                             <h2 className="max-w-md text-3xl font-bold sm:text-4xl text-left text-violetTxt px-2">
-                                LORDS ACADEMY
+                                LORD'S ACADEMY
                             </h2>
                         </div>
 
@@ -128,7 +133,7 @@ function MainInro() {
 
                 <UpcomingEvents />
 
-                <div className="bg-[#565593] py-5 md:py-0">
+                <div className="bg-violetBg py-5 md:py-0">
 
                     <div className="sm:flex justify-center sm:flex-row items-center gap-8 sm:gap-0">
 

@@ -1,10 +1,10 @@
 
-function Page2() {
+function Fee() {
     const videoBanner = "/videos/videoBanner.mp4"
 
     return (
         <>
-            <div className="text-center text-3xl">Page2</div>
+            <div className="text-center text-3xl">Fee</div>
             <hr className="mx-10" />
             <p className="text-center my-4">This is a dummy page</p>
             {/* static video banner */}
@@ -17,4 +17,4 @@ function Page2() {
     )
 }
 
-export default Page2
+export default Fee
