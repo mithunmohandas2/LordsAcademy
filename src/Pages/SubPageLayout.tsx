@@ -7,7 +7,21 @@ import Contact from "../components/ContactUs/Contact";
 import Admission from "../components/SubPageComponents/Admission";
 import Fee from "../components/SubPageComponents/Fee";
 import StudentLogin from "../components/SubPageComponents/StudentLogin";
-import Page4 from "../components/SubPageComponents/Page4";
+import ExtraPage from "../components/SubPageComponents/ExtraPage";
+import CMI from "../components/SubPageComponents/CMI";
+import CoCurricularActivities from "../components/SubPageComponents/CoCurricularActivities";
+import CurricularActivities from "../components/SubPageComponents/CurricularActivities";
+import Faculty from "../components/SubPageComponents/Faculty";
+import Infrastructure from "../components/SubPageComponents/Infrastructure";
+import Library from "../components/SubPageComponents/Library";
+import Management from "../components/SubPageComponents/Management";
+import Manager from "../components/SubPageComponents/Manager";
+import OurCampus from "../components/SubPageComponents/OurCampus";
+import Park from "../components/SubPageComponents/Park";
+import PhotoGallery from "../components/SubPageComponents/PhotoGallery";
+import Principal from "../components/SubPageComponents/Principal";
+import Transport from "../components/SubPageComponents/Transport";
+import VideoGallery from "../components/SubPageComponents/VideoGallery";
 
 function SubPage({ location }: { location: string }) {
     const [isSideMenuOpen, setIsSideMenuOpen] = useState(false);
@@ -35,7 +49,22 @@ function SubPage({ location }: { location: string }) {
                     {location === "admission" && <Admission />}
                     {location === "fee" && <Fee />}
                     {location === "student_login" && <StudentLogin />}
-                    {location === "page4" && <Page4 />}
+                    {location === "CMI" && <CMI />}
+                    {location === "CoCurricularActivities" && <CoCurricularActivities />}
+                    {location === "CurricularActivities" && <CurricularActivities />}
+                    {location === "Faculty" && <Faculty />}
+                    {location === "Infrastructure" && <Infrastructure />}
+                    {location === "Library" && <Library />}
+                    {location === "Management" && <Management />}
+                    {location === "Manager" && <Manager />}
+                    {location === "OurCampus" && <OurCampus />}
+                    {location === "Park" && <Park />}
+                    {location === "PhotoGallery" && <PhotoGallery />}
+                    {location === "Principal" && <Principal />}
+                    {location === "Transport" && <Transport />}
+                    {location === "VideoGallery" && <VideoGallery />}
+
+                    {location === "ExtraPage" && <ExtraPage />}
 
                 </div>
 

@@ -8,34 +8,42 @@ export const menuList = [
         backgroundMain: "/images/menuWallpaper.jpg",
         subMenu: [
             {
-                name: "Principal"
+                name: "Principal",
+                link: "/Principal",
             },
             {
-                name: "Manager"
+                name: "Manager",
+                link: "/Manager",
             },
             {
-                name: "Management"
+                name: "Management",
+                link: "/Management",
             },
             {
-                name: "CMI"
+                name: "CMI",
+                link: "/CMI",
             },
             {
-                name: "Our Campus"
+                name: "Our Campus",
+                link: "/OurCampus",
             },
         ]
     },
     {
         name: "Faculty",
+        link: "/Faculty",
     },
     {
         name: "Academics",
         backgroundMain: "/images/menuWallpaper.jpg",
         subMenu: [
             {
-                name: "Curricular Activities"
+                name: "Curricular Activities",
+                link: "/CurricularActivities",
             },
             {
-                name: "Co-curricular Activities"
+                name: "Co-curricular Activities",
+                link: "/CoCurricularActivities",
             },
         ]
     },
@@ -44,16 +52,20 @@ export const menuList = [
         backgroundMain: "/images/menuWallpaper.jpg",
         subMenu: [
             {
-                name: "Infrastructure"
+                name: "Infrastructure",
+                link: "/Infrastructure"
             },
             {
-                name: "Park"
+                name: "Park",
+                link: "/Park"
             },
             {
-                name: "Library"
+                name: "Library",
+                link: "/Library"
             },
             {
-                name: "Transport"
+                name: "Transport",
+                link: "/Transport"
             },
         ]
     },
@@ -62,15 +74,18 @@ export const menuList = [
         backgroundMain: "/images/menuWallpaper.jpg",
         subMenu: [
             {
-                name: "Videos"
+                name: "Videos",
+                link: "/VideoGallery"
             },
             {
-                name: "Photos"
+                name: "Photos",
+                link: "/PhotoGallery"
             },
         ]
     },
     {
         name: "Student Login",
+        link: "/student_login"
     },
     {
         name: "Contact",
