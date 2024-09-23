@@ -9,14 +9,10 @@ const Tooltip = ({ text, children }: TooltipProps) => {
     const [isHovered, setIsHovered] = useState(false);
 
     return (
-        <div
-            className="relative inline-block"
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
-        >
+        <div className="relative inline-block" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)} >
             {children}
             {isHovered && (
-                <div className="absolute bottom-full mb-2 left-1/2 transform -translate-x-1/2 bg-gray-700 text-white text-xs rounded py-1 px-2">
+                <div className="absolute bottom-full mb-2 left-1/2 transform -translate-x-1/2 bg-black text-white text-md rounded py-1 px-2 w-[210px] text-center">
                     {text}
                 </div>
             )}

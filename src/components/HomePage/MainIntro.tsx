@@ -3,6 +3,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import UpcomingEvents from "../UpcomingEvents/UpcomingEvents";
 import { useState } from "react";
+import Tooltip from "../Breadcrumbs/Tooltip";
 
 function MainInro() {
     const [news] = useState("Your News Here  Your News Here  Your News Here  Your News Here  Your News Here  Your News Here");
@@ -87,7 +88,9 @@ function MainInro() {
 
                         <div className="flex mt-2">
                             {/* <div className="bg-white absolute px-2 w-[200px] text-center rounded hover:zoomEffect">0480-2760322 | 2763771</div> */}
-                            <a href="tel:+914802760322" target='_blank' className="mx-1 px-0.5 h-10 mb-2 cursor-pointer zoomEffect"><span className="material-symbols-outlined"> call </span></a>
+                            <Tooltip text="0480-2760322, 2763771">
+                                <a href="tel:+914802760322" target='_blank' className="mx-1 px-0.5 h-10 mb-2 cursor-pointer zoomEffect"><span className="material-symbols-outlined"> call </span></a>
+                            </Tooltip>
                             <a href="https://maps.app.goo.gl/u8NJLErYGpDP77c87" target="_blank" className="mx-1 px-0.5 h-10 mb-2 cursor-pointer zoomEffect"><span className="material-symbols-outlined"> location_on </span></a>
                             <a className="mx-1 px-0.5 h-10 mb-2 cursor-pointer zoomEffect"><span className="material-symbols-outlined"> search </span></a>
                         </div>
