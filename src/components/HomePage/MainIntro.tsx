@@ -2,22 +2,23 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import UpcomingEvents from "../UpcomingEvents/UpcomingEvents";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Tooltip from "../Breadcrumbs/Tooltip";
+import { getCarouselImagesAPI } from "../../Services/InteractionsAPI";
 
 function MainInro() {
-    const [news] = useState("Your News Here  Your News Here  Your News Here  Your News Here  Your News Here  Your News Here");
+    const [news] = useState("Our Site is under construction. Sorry for the inconvinience");
+    const [sliderImages, setSliderImages] = useState( [
+        "/images/carousel1.png",
+        "/images/carousel2.png",
+        "/images/carousel3.jpg",
+        "/images/carousel4.webp",
+    ])
 
     // const banner = "/images/Banner.jpg";
     // const videoBanner = "/videos/videoBanner.mp4"
     const principal = "/images/Principal.jpg";
     const principalVideo = "/videos/PrincipalSpeech.mp4"
-    const sliderImages = [
-        "/images/carousel1.png",
-        "/images/carousel2.png",
-        "/images/carousel3.jpg",
-        "/images/carousel4.webp",
-    ];
 
     const sliderSettings = {
         dots: true,
@@ -29,18 +30,29 @@ function MainInro() {
         autoplaySpeed: 3000,
     };
 
+    useEffect(() => {
+        getImages();
+    }, [])
+
+    const getImages = async () => {
+        try {
+            const response = await getCarouselImagesAPI();
+            if (response?.data) {
+                alert("result received");
+                setSliderImages(response?.data?.url);
+                console.log(response);
+            } else {
+                // alert("Error")
+            }
+
+        } catch (error) {
+            console.log((error as Error).message);
+        }
+    }
+
     return (
         <>
             <section className="container-fluid relative -mt-28 -z-40">
-                <div className="absolute w-full bg-violetTxt/80 text-white py-0.5 font-semibold top-[48vw] sm:top-[50vw] md:top-[52vw] xl:top-[48vw] 2xl:top-[70vh] overflow-hidden z-40">
-                    <div className="flex">
-                        <button className="px-2 lg:px-3 2xl:px-4 bg-violetBg z-50">Announcement</button>
-                        <div className="animate-marquee whitespace-nowrap z-40">
-                            {news}
-                        </div>
-                    </div>
-                </div>
-
                 {/* Banner image */}
                 {/* <img className="w-full" src={banner} alt="LORD'S ACADEMY Banner" /> */}
 
@@ -63,6 +75,14 @@ function MainInro() {
                     </div> */}
                 </div>
             </section>
+            <div className="w-full bg-violetTxt/80 text-white py-0.5 font-semibold overflow-hidden">
+                    <div className="flex">
+                        <button className="px-2 lg:px-3 2xl:px-4 bg-violetBg z-50">Announcement</button>
+                        <div className="animate-marquee whitespace-nowrap z-40">
+                            {news}
+                        </div>
+                    </div>
+                </div>
 
             <div className="absolute w-[180px] p-2 font-semibold top-[5vh] md:top-[8vh] xl:top-[10vh] lg:start-20 z-50">
                 <div className="flex flex-col justify-center w-full items-center">

@@ -5,10 +5,8 @@ function UpcomingEvents() {
     const [animation, setAnimation] = useState<'flyIn' | 'flyOut'>('flyIn'); // Manage both flyIn and flyOut animations
 
     const events = [
-        { date: "September 12, 2024", event: "Annual Meet" },
-        { date: "September 13, 2024", event: "Sports Competition" },
-        { date: "September 14, 2024", event: "Onam Celebration" },
-        { date: "October 15, 2024", event: "Youth Festival" }
+        { date: "December 25, 2024", event: "Christmas Celebration" },
+        { date: "January 1, 2025", event: "New Year Celebration" },
     ];
 
     useEffect(() => {
