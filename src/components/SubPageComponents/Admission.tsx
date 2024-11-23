@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import { Breadcrumbs } from "../Breadcrumbs/Breadcrumbs"
 
 function Admission() {
@@ -5,14 +6,17 @@ function Admission() {
         <>
             <div className="min-h-screen lg:py-5">
                 <div className="max-w-4xl mx-auto px-6">
-                    <Breadcrumbs pageTitle={"Admission"} link={"/blog"} />
+                    <Breadcrumbs pageTitle={"Admission"} link={"/"} />
 
                     <div className="text-start my-10">
-                        <h1 className="text-4xl font-bold text-gray-800">LORD'S Life</h1>
-                        <p className="text-lg font-semibold mt-4">
-                            Positive, supportive relationships between students and teachers form the basis for learning
-                            and these are what we promote in the school. We want our students to be confident, active partners
-                            in their learning taking full advantage of all that the school can offer them.
+                        <h1 className="text-4xl font-bold text-gray-800">PROCEDURE FOR ADMISSION</h1>
+                        <p className="text-lg mt-4">
+                            The Little Kingdom of Lord’s Academy is open to children of age 4 and above as on 1st June and Lord’s
+                            Pre-KG campus at I H Monastery is open to children of age 3. Parents should register their children for
+                            admission to KG/ Pre-KG by online application form which is available in school website. Birth Certificate
+                            indicating the name of child, TC/ Mark list if required and latest passport size photo should be uploaded
+                            along with the online application form. Age, ability and conduct of the pupil will be the criteria for
+                            admission.
                         </p>
                     </div>
                 </div>
@@ -28,11 +32,15 @@ function Admission() {
                     </div>
 
                     <div className="sm:w-[30%] mx-10 p-4 border-b">
-                        <div className="text-lg text-gray-600 mb-2 font-semibold">
-                            "The inspiring learning environment at LORD's is perfect for educational growth."
+                        <div className="text-lg text-gray-600 mb-4 font-semibold">
+                            Click below to proceed to online admission
                         </div>
-                        <div className="text-right text-gray-500">
-                            <p>Chenhuan Liu, Lord's Academy student</p>
+                        <div className="text-center text-gray-500">
+                            <a target="_blank" href={'https://onlineadmissionforms.gjschool.xyz/applyonline?admission=TE9SROKAmVMgQUNBREVNWSBDTUkgSUNTRSBTQ0hPT0xfNTg='}>
+                                <button className="btn zoomEffect">
+                                    <i className="animation"></i>Online Admission<i className="animation"></i>
+                                </button>
+                            </a>
                         </div>
                     </div>
                 </section>
@@ -40,13 +48,22 @@ function Admission() {
 
                 <div className="max-w-4xl mx-auto px-6">
                     <div className="mt-10 text-gray-700">
+                        <b>
+                            SCHOOL TIMING
+                        </b>
+
                         <p>
-                            Each student with a strong sense of self. Our students have the ability to recognise their strengths and
-                            proactively address their needs. They have awareness of their own language and culture, and are able to
-                            pursue their passions. Students will develop literacy, numeracy, and articulation. They will become critical,
-                            creative and caring thinkers. They will learn to be reflective, to manage change and achieve the qualifications
-                            required for their next stage in life.
+                            KG & MAIN SCHOOL : 09:15 am to 03:45 pm
                         </p>
+
+                        <p>
+                            PRE-KG : 10:00 am to 02:00 pm
+                        </p>
+
+                        <p>
+                            School Bus facility is available in existing routes for KG & MAIN SCHOOL and Bus facility is available for Pre-KG within a 5 km radius.
+                        </p>
+
                     </div>
                 </div>
             </div>

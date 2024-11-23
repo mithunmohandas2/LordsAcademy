@@ -8,14 +8,14 @@ import { getCarouselImagesAPI } from "../../Services/InteractionsAPI";
 
 function MainInro() {
     const [news] = useState("Our Site is under construction. Sorry for the inconvinience");
-    const [sliderImages, setSliderImages] = useState( [
-        "/images/carousel1.png",
-        "/images/carousel2.png",
-        "/images/carousel3.jpg",
+    const [sliderImages, setSliderImages] = useState([
+        "/images/carousel1.webp",
+        "/images/carousel2.webp",
+        "/images/carousel3.webp",
         "/images/carousel4.webp",
     ])
 
-    // const banner = "/images/Banner.jpg";
+    const banner = "/images/Banner.jpg";
     // const videoBanner = "/videos/videoBanner.mp4"
     const principal = "/images/Principal.jpg";
     const principalVideo = "/videos/PrincipalSpeech.mp4"
@@ -54,18 +54,18 @@ function MainInro() {
         <>
             <section className="container-fluid relative -mt-28 -z-40">
                 {/* Banner image */}
-                {/* <img className="w-full" src={banner} alt="LORD'S ACADEMY Banner" /> */}
+                <img className="w-full" src={banner} alt="LORD'S ACADEMY Banner" />
 
-                <div className="relative w-full overflow-hidden" style={{ paddingTop: '56.25%' }}>
+                <div className="relative w-full overflow-hidden hidden" style={{ paddingTop: '56.25%' }}>
                     {/* Responsive YouTube iframe container */}
-                    <iframe
+                    {/* <iframe
                         className="absolute top-0 left-0 w-full h-full"
                         src="https://www.youtube.com/embed/fIaxgppSi2c?autoplay=1&mute=1&loop=1&playlist=fIaxgppSi2c&controls=0&showinfo=0&modestbranding=1"
                         title="YouTube video"
                         frameBorder="0"
                         allow="autoplay; encrypted-media"
                         allowFullScreen
-                    />
+                    /> */}
 
                     {/* static video banner */}
                     {/* <div className="absolute top-0 left-0 w-full h-full">
@@ -76,13 +76,13 @@ function MainInro() {
                 </div>
             </section>
             <div className="w-full bg-violetTxt/80 text-white py-0.5 font-semibold overflow-hidden">
-                    <div className="flex">
-                        <button className="px-2 lg:px-3 2xl:px-4 bg-violetBg z-50">Announcement</button>
-                        <div className="animate-marquee whitespace-nowrap z-40">
-                            {news}
-                        </div>
+                <div className="flex">
+                    <button className="px-2 lg:px-3 2xl:px-4 bg-violetBg z-50">Announcement</button>
+                    <div className="animate-marquee whitespace-nowrap z-40">
+                        {news}
                     </div>
                 </div>
+            </div>
 
             <div className="absolute w-[180px] p-2 font-semibold top-[5vh] md:top-[8vh] xl:top-[10vh] lg:start-20 z-50">
                 <div className="flex flex-col justify-center w-full items-center">
@@ -134,7 +134,12 @@ function MainInro() {
                         </div>
 
                         <p className="max-w-md my-4 text-left text-slate-700 px-2">
-                            When you walk through the doors of IIS, you'll discover a safe, nurturing sanctuary for students, parents and families as they join our integrated community. Our dedicated facilities include our Jungle Snoezelen, Baking Studio, Indoor Occupational Therapy Suite, Library, and Art Studio! In addition, we have several private suites for our Support Staff to ensure all of our students' needs are met.
+                            Lord’s Academy is an English Medium School, following the Indian Certificate of Secondary Education
+                            (ICSE Syllabus) , an internationally accepted system of education. The school is run by Lord’s Academy
+                            Education &amp; Charitable Trust (568/IV/SRO/EKM/2005), formed by the CMI Fathers of I.H. Monastery,
+                            Varandarappilly. Lord’s Academy and Kindergarten symbolize the CMI’s relentless quest for excellence in
+                            education and are the realization of the long-cherished dreams of many people who aspire for holistic
+                            education.
                         </p>
                     </div>
 

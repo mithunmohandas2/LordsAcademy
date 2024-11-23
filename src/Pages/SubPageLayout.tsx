@@ -22,6 +22,7 @@ import PhotoGallery from "../components/SubPageComponents/PhotoGallery";
 import Principal from "../components/SubPageComponents/Principal";
 import Transport from "../components/SubPageComponents/Transport";
 import VideoGallery from "../components/SubPageComponents/VideoGallery";
+import ComputerLab from "../components/SubPageComponents/ComputerLab";
 
 function SubPage({ location }: { location: string }) {
     const [isSideMenuOpen, setIsSideMenuOpen] = useState(false);
@@ -44,24 +45,26 @@ function SubPage({ location }: { location: string }) {
                 <div className="my-10">
 
                     {/* SubPage Contents */}
-                    {location === "blog" && <LordsLife />}
                     {location === "contact" && <Contact />}
                     {location === "admission" && <Admission />}
                     {location === "fee" && <Fee />}
-                    {location === "student_login" && <StudentLogin />}
+                    {location === "Principal" && <Principal />}
+                    {location === "Manager" && <Manager />}
+                    {location === "Management" && <Management />}
                     {location === "CMI" && <CMI />}
+                    {location === "OurCampus" && <OurCampus />}
+                    {location === "Faculty" && <Faculty />}
                     {location === "CoCurricularActivities" && <CoCurricularActivities />}
                     {location === "CurricularActivities" && <CurricularActivities />}
-                    {location === "Faculty" && <Faculty />}
                     {location === "Infrastructure" && <Infrastructure />}
+                    {location === "Transport" && <Transport />}
                     {location === "Library" && <Library />}
-                    {location === "Management" && <Management />}
-                    {location === "Manager" && <Manager />}
-                    {location === "OurCampus" && <OurCampus />}
+                    {location === "ComputerLab" && <ComputerLab />}
+
+                    {location === "blog" && <LordsLife />}
+                    {location === "student_login" && <StudentLogin />}
                     {location === "Park" && <Park />}
                     {location === "PhotoGallery" && <PhotoGallery />}
-                    {location === "Principal" && <Principal />}
-                    {location === "Transport" && <Transport />}
                     {location === "VideoGallery" && <VideoGallery />}
 
                     {location === "ExtraPage" && <ExtraPage />}

@@ -56,8 +56,8 @@ export const menuList = [
                 link: "/Infrastructure"
             },
             {
-                name: "Park",
-                link: "/Park"
+                name: "Computer Lab",
+                link: "/ComputerLab"
             },
             {
                 name: "Library",

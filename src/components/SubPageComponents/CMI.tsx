@@ -5,52 +5,27 @@ function CMI() {
         <>
             <div className="min-h-screen lg:py-5">
                 <div className="max-w-4xl mx-auto px-6">
-                    <Breadcrumbs pageTitle={"CMI"} link={"/blog"} />
+                    <Breadcrumbs pageTitle={"CMI"} link={"/"} />
 
                     <div className="text-start my-10">
-                        <h1 className="text-4xl font-bold text-gray-800">LORD'S Life</h1>
+                        <h1 className="text-4xl font-bold text-gray-800">CMI (Carmelites Of Mary Immaculate)</h1>
                         <p className="text-lg font-semibold mt-4">
-                            Positive, supportive relationships between students and teachers form the basis for learning
-                            and these are what we promote in the school. We want our students to be confident, active partners
-                            in their learning taking full advantage of all that the school can offer them.
+                            Overview
                         </p>
-                    </div>
-                </div>
-
-
-                <section id="banner" className="sm:flex justify-center sm:flex-row items-center">
-                    <div className="sm:w-[65%] flex">
-                        <img
-                            src="https://media.istockphoto.com/id/1447889800/photo/two-college-student-female-friends-smiling-ready-for-classes-at-the-university-campus.jpg?s=612x612&w=0&k=20&c=IIxWOgexUu8DHDq_jPNMgPeoqsy77w9da_-9dUZeQD4="
-                            alt="Lord's Academy Students"
-                            className="shadow-lg w-full max-w-4xl"
-                        />
-                    </div>
-
-                    <div className="sm:w-[30%] mx-10 p-4 border-b">
-                        <div className="text-lg text-gray-600 mb-2 font-semibold">
-                            "The inspiring learning environment at LORD's is perfect for educational growth."
-                        </div>
-                        <div className="text-right text-gray-500">
-                            <p>Chenhuan Liu, Lord's Academy student</p>
-                        </div>
-                    </div>
-                </section>
-
-
-                <div className="max-w-4xl mx-auto px-6">
-                    <div className="mt-10 text-gray-700">
-                        <p>
-                            Each student with a strong sense of self. Our students have the ability to recognise their strengths and
-                            proactively address their needs. They have awareness of their own language and culture, and are able to
-                            pursue their passions. Students will develop literacy, numeracy, and articulation. They will become critical,
-                            creative and caring thinkers. They will learn to be reflective, to manage change and achieve the qualifications
-                            required for their next stage in life.
+                        <p className="text-lg mt-4">
+                            CMI (Carmelites of Mary Immaculate) is the first indigenous congregation of Catholic Priests founded by
+                            St. Kuriakose Elias Chavara in 1831 at Mannanam, Kottayam, State of Kerala, inspired by the life and
+                            teachings of Jesus Christ. For St. Chavara, education was the only medium of transformation of the
+                            person, the family and the society. With this vision in mind, St. Chavara opened a Sanskrit School in the
+                            year 1864 at Mannanam, Kerala. In an age when Sanskrit education was the privilege of the elite caste
+                            and the privileged, this school was the first of its kind open for all, irrespective of caste and creed.
+                            Today, St. Chavara’s vision of education has come to fruition through hundreds of CMI educational
+                            institutions as Professional Colleges, Arts and Science Colleges, Training Colleges, Technical Institutes,
+                            Schools and Cultural Centres all over India and abroad.
                         </p>
                     </div>
                 </div>
             </div>
-
         </>
     )
 }
