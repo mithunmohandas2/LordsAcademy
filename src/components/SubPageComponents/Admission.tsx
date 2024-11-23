@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom"
 import { Breadcrumbs } from "../Breadcrumbs/Breadcrumbs"
 
 function Admission() {
